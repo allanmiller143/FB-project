@@ -1,26 +1,16 @@
 import React from 'react'
-import { Container, Typography, Button, Box } from '@mui/material'
+import { Typography, Button, Box } from '@mui/material'
+import PageContainer from '../../Utils/Components/Containers/PageContainer'
+import HeroSection from './Components/HeroSection/HeroSection'
+import Members from './Components/Members/Members'
 
 const Index = () => {
   return (
-    <Container maxWidth="md">
-      <Box sx={{ mt: 8, textAlign: 'center' }}>
-        <Typography variant="h1" gutterBottom>
-          Página Inicial
-        </Typography>
-        <Typography variant="body1" color="text.secondary" paragraph>
-          Bem-vindo ao nosso site! Este espaço será o ponto central de divulgação dos projetos do time de pesquisa do Prof. Fernando Buarque.
-        </Typography>
+    <PageContainer title="Início | Grupo de Pesquisa - Prof. Fernando Buarque" description="Bem-vindo ao site do grupo de pesquisa liderado pelo Prof. Fernando Buarque. Veja nossos projetos, publicações e equipe.">
+        <HeroSection/>
+        <Members/>
 
-        <Typography variant="body1" sx={{ fontFamily: "'Inter', sans-serif" }}>
-          Este parágrafo está com Inter
-        </Typography>
-
-        <Button variant="contained" color="primary" size="large">
-          Ver Projetos
-        </Button>
-      </Box>
-    </Container>
+    </PageContainer>
   )
 }
 
