@@ -31,7 +31,8 @@ const sliderSettings = {
 }
 
 const Members = () => {
-  return (
+  return (       
+
     <Box
       component={motion.div}
       initial={{ opacity: 0, y: 30 }}
@@ -42,6 +43,7 @@ const Members = () => {
         maxWidth: 1280,
         mx: 'auto',
         py: 8,
+        pb: 10,
         px: { xs: 2, md: 4 },
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
@@ -105,7 +107,7 @@ const Members = () => {
             fontSize: '0.75rem',
             letterSpacing: 1,
             color: 'text.secondary',
-            mb: 1,
+            mb: 2,
           }}
         >
           Conheça nossa equipe
@@ -117,6 +119,8 @@ const Members = () => {
             mb: 2,
             fontSize: { xs: '1.5rem', md: '2rem' },
             color: 'primary.main',
+            fontWeight: 400,
+            lineHeight: 1.1,
           }}
         >
           Pesquisadores unidos, ideias ilimitadas

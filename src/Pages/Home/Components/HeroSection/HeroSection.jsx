@@ -35,10 +35,9 @@ const HeroSection = () => {
             sx={{ flex: 1 }}
           >
             <MotionTypography
-              variant="h2"
-              component="h1"
+              variant="h1"
               sx={{
-                fontWeight: 600,
+                fontWeight: 500,
                 fontSize: { xs: '2.2rem', md: '3.4rem' },
                 color: 'primary.main',
                 mb: 3,
@@ -65,7 +64,7 @@ const HeroSection = () => {
 
             <Button
               variant="outlined"
-              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 4, fontSize: '1rem'}}
+              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 4}}
               size="large"
               color="primary"
               onClick={() => navigate('/projetos')}

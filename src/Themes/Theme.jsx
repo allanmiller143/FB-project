@@ -14,36 +14,24 @@ const theme = createTheme({
     background: {
       default: '#F4F6F8', // Fundo neutro claro
       paper: '#FFFFFF',
+      black: '#000000',
+      light: '#F0F0F0', // Fundo claro para cards e seções
     },
     text: {
       primary: '#1A1A1A',
       secondary: '#5F6368',
+      light: '#FFFFFF', // Texto claro para contraste em fundos escuros
+      dark: '#000000', // Texto escuro para contraste em fundos claros
     },
   },
-  typography: {
-    fontFamily: `'Inter', sans-serif`, // Corpo padrão
-    h1: {
-      fontFamily: `'Poppins', sans-serif`,
-      fontSize: '2.6rem',
-      fontWeight: 700,
-    },
-    h2: {
-      fontFamily: `'Poppins', sans-serif`,
-      fontSize: '2rem',
-      fontWeight: 600,
-    },
-    body1: {
-      fontSize: '1rem',
-      fontWeight: 400,
-    },
-  },
+
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
           borderRadius: 12,
           padding: '10px 20px',
-        },
+          textTransform: 'none',},
       },
     },
     MuiCard: {
