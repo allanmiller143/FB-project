@@ -19,7 +19,6 @@ const Header = () => {
 
   return (
     <Box
-      component="header"
       sx={{
         position: 'sticky',
         top: 0,
@@ -35,6 +34,7 @@ const Header = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          px: { xs: 2, md: 3 },
         }}
       >
         {/* LOGO / TÍTULO */}

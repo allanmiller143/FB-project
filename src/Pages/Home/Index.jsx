@@ -5,6 +5,7 @@ import HeroSection from './Components/HeroSection/HeroSection'
 import Members from './Components/Members/Members'
 import ContactCard from './Components/Contact/ContactCard'
 import News from './Components/News/News'
+import Projects from './Components/Projects/Projects'
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
         <Members/>
         <ContactCard/>
         <News/>
+        <Projects/>
     </PageContainer>
   )
 }

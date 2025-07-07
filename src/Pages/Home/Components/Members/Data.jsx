@@ -1,25 +1,27 @@
-// src/data/membros.js
-
+import Fernando from '../../../../assets/Members/Fb.jpg';
+import Allan from '../../../../assets/Members/Am.png';
+import Andina from '../../../../assets/Members/A.png';
+import Marcio from '../../../../assets/Members/Marcio.png';
 
 export const membrosDestaque = [
   {
     nome: 'Fernando Buarque',
     funcao: 'Coordenador',
-    foto: 'src/assets/Members/Fb.jpg', // ou use uma URL real
+    foto: Fernando,
   },
   {
     nome: 'Allan Miller',
     funcao: 'Mestrando',
-    foto: 'src/assets/Members/Am.png', // ou use uma URL real
+    foto: Allan,
   },
   {
     nome: 'Andina',
     funcao: 'Doutoranda',
-    foto: 'src/assets/Members/A.png', // ou use uma URL real
+    foto: Andina,
   },
   {
     nome: 'Márcio',
     funcao: 'Doutorando',
-    foto: 'src/assets/Members/Marcio.png',
+    foto: Marcio,
   },
-]
+];

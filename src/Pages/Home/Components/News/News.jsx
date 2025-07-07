@@ -7,6 +7,7 @@ import {
   CardMedia,
   CardContent,
   Chip,
+  Button,
 } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -130,6 +131,15 @@ const News = () => {
           </Box>
         ))}
       </Slider>
+      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'end', mt: 2 }}>
+        <Button
+          variant="outlined"
+          sx={{ textTransform: 'none', fontWeight: 600, display: 'flex', alignSelf: 'end', padding: '6px 12px' }}
+          onClick={() => window.location.href = '/noticias'}
+        >
+          Ver + notícias
+        </Button>
+       </Box>
     </Box>
   )
 }
