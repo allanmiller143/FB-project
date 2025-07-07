@@ -29,8 +29,8 @@ const ContactCard = () => {
         sx={{
           maxWidth: 'lg',
           mx: 'auto',
-          mb: 8,
-          px: { xs: 2, md: 0 },
+          mb: 5,
+          px: { xs: 2, md: 1 },
         }}
       >
         <Card
@@ -60,14 +60,14 @@ const ContactCard = () => {
           variant="h5"
           sx={{
             mb: 2,
-            fontSize: { xs: '1.5rem', md: '2rem' },
+            fontSize: { xs: '1.2rem', md: '2rem' },
             fontWeight: 100,
             lineHeight: 1.1,
           }}
             >
               Quer entrar em contato com nosso time? Deixe uma mensagem agora mesmo!
             </Typography>
-            <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.7)', mb: 3 }}>
+            <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.7)', mb: 3, fontSize: { xs: '0.8rem', md: '1rem' } }}>
               Se você tiver alguma dúvida, sinta-se à vontade para entrar em contato!
             </Typography>
 

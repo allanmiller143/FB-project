@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <Box
       sx={{
-        py: { xs: 8, md: 10 },
+        py: { xs: 4, md: 10 },
         background: 'linear-gradient(to right, #f4f6f8, #ffffff)',
         borderBottom: '1px solid #e0e0e0',
       }}
@@ -24,7 +24,7 @@ const HeroSection = () => {
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
             alignItems: 'center',
-            gap: { xs: 8, md: 6 },
+            gap: { xs: 2, md: 6 },
           }}
         >
           {/* Texto */}
@@ -38,7 +38,7 @@ const HeroSection = () => {
               variant="h1"
               sx={{
                 fontWeight: 500,
-                fontSize: { xs: '2.2rem', md: '3.4rem' },
+                fontSize: { xs: '2rem', md: '3.4rem' },
                 color: 'primary.main',
                 mb: 3,
               }}
@@ -51,12 +51,12 @@ const HeroSection = () => {
             <Typography
               variant="body1"
               sx={{
-                fontSize: { xs: '1rem', md: '1.15rem' },
+                fontSize: { xs: '0.8rem', md: '1.15rem' },
                 lineHeight: 1.8,
                 color: 'text.secondary',
                 fontFamily: `'IBM Plex Sans', sans-serif`,
                 maxWidth: 600,
-                mb: 4,
+                mb: {xs: 2, md: 4},
               }}
             >
               Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.
@@ -64,8 +64,8 @@ const HeroSection = () => {
 
             <Button
               variant="outlined"
-              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 4}}
-              size="large"
+              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 2}}
+              size="small"
               color="primary"
               onClick={() => navigate('/projetos')}
             >
@@ -78,7 +78,7 @@ const HeroSection = () => {
                 mt: 2,
                 display: 'block',
                 color: 'text.secondary',
-                fontFamily: `'IBM Plex Sans', sans-serif`,
+                fontSize: { xs: '0.75rem', md: '0.85rem' },
               }}
             >
               Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco
@@ -94,10 +94,11 @@ const HeroSection = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.2 }}
             sx={{
-              width: { xs: '100%', md: '420px' },
-              maxHeight: 400,
+              width: { xs: '200px', md: '420px' },
+              maxHeight: { xs: '200px', md: '420px' },
               objectFit: 'contain',
               flexShrink: 0,
+              display: { md: 'block' }
             }}
           />
         </Box>

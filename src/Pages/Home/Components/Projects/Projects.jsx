@@ -18,7 +18,7 @@ const Projects = () => {
       sx={{
         maxWidth: 'lg',
         mx: 'auto',
-        px: { xs: 2, md: 0 },
+        px: { xs: 2, md: 1 },
         py: 6,
       }}
     >
@@ -48,7 +48,9 @@ const Projects = () => {
               display: 'flex',
               alignItems: 'flex-start',
               gap: 2,
-              p: 2,
+              px: 2,
+              pt: 2,
+              pb: 0,
             }}
           >
             {/* Imagem opcional */}
@@ -86,8 +88,8 @@ const Projects = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     lineHeight: 1.3,
-                    fontSize: '1rem',
-                    maxWidth: '80%',
+                    fontSize: { xs: '0.8rem', md: '1rem' },
+                    maxWidth: '70%',
                   }}
                 >
                   {projeto.titulo}
@@ -96,9 +98,10 @@ const Projects = () => {
                   label={projeto.area}
                   size="small"
                   sx={{
-                    fontSize: '0.7rem',
-                    backgroundColor: '#e0e0e0',
+                    fontSize: { xs: '0.6rem', md: '0.6rem' },
+                    backgroundColor: 'primary.main',
                     fontWeight: 500,
+                    color: 'primary.contrastText',
                   }}
                 />
               </Box>
@@ -112,6 +115,8 @@ const Projects = () => {
                   WebkitBoxOrient: 'vertical',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
+                  fontSize: { xs: '0.75rem', md: '0.85rem' },
+                  maxWidth: '95%',
                 }}
               >
                 {projeto.descricao}
@@ -128,7 +133,9 @@ const Projects = () => {
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
                     maxWidth: '90%',
-                    mt: 3,
+                    mt: 2,
+                    mb : {xs: 2, md: 0},
+                    fontSize: { xs: '0.70rem', md: '0.85rem' },
                   }}
                 >
                   {projeto.text}

@@ -26,6 +26,24 @@ const sliderSettings = {
       settings: {
         slidesToShow: 1,
       }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
     }
   ]
 }
@@ -40,16 +58,16 @@ const Members = () => {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       sx={{
         width: '100%',
-        maxWidth: 1280,
-        mx: 'auto',
-        py: 8,
+        maxWidth: 'lg',
+        marginX: 'auto',
+        mt: 4,
+        py: { xs: 4, md: 6 },
         pb: 10,
         px: { xs: 2, md: 4 },
         display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' },
+        flexDirection: { xs: 'column-reverse', md: 'row' },
         gap: 6,
-        alignItems: 'center',
-        flexWrap: 'wrap',
+        alignItems: { md: 'center' },
         justifyContent: 'center',
         fontFamily: "'Inter', 'Poppins', 'DM Sans', sans-serif",
       }}
@@ -94,8 +112,8 @@ const Members = () => {
       {/* Texto de apresentação */}
       <Box
         sx={{
-          maxWidth: 400,
-          textAlign: { xs: 'center', md: 'left' },
+          maxWidth: { xs: 'lg', md: 400 },
+          textAlign: { md: 'left' },
           flexShrink: 0,
         }}
       >

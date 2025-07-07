@@ -35,7 +35,7 @@ const News = () => {
   const navigate = useNavigate()
 
   return (
-    <Box sx={{ px: { xs: 2, md: 4 }, py: 6, maxWidth: 1280, mx: 'auto' }}>
+    <Box sx={{ px: { xs: 2, md: 1 }, py: 6, maxWidth: 'lg', mx: 'auto' }}>
       <Typography
         variant="h5"
         fontWeight={600}
