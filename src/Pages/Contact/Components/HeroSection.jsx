@@ -2,7 +2,7 @@
 import React from 'react'
 import { Box, Typography, Grid, TextField, Button, IconButton, Avatar } from '@mui/material'
 import { LocationOn, Phone, Email } from '@mui/icons-material'
-import { motion } from 'framer-motion'
+import Contact from '../../../assets/Contact.svg'
 
 const HeroSection = () => {
 
@@ -80,7 +80,7 @@ const HeroSection = () => {
             }}>
                 <Box
                 component="img"
-                src="/src/assets/Contact.svg"
+                src={Contact}
                 alt="Contato"
                 sx={{
                     width: '100%',

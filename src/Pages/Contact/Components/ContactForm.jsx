@@ -10,7 +10,7 @@ const ContactForm = () => {
 
   return (
     <Box sx={{ py: 8 }}>
-      <Container maxWidth="lg">
+      <Container>
         <Box
           sx={{
             display: 'flex',
