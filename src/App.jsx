@@ -4,13 +4,18 @@ import Header from './Utils/Components/Header/Header.jsx'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Toaster } from 'sonner';
+import Footer from './Utils/Components/Footer/Footer.jsx';
+import AllProjectsContextProvider from './Pages/AllProjects/Context/AllProjectsContextProvider.jsx';
 
 function App() {
   return (
     <>
       <Toaster richColors position="top-right" />
-      <Header />
-      <Routes />
+      <AllProjectsContextProvider>
+        <Header />
+        <Routes />
+        <Footer/>
+      </AllProjectsContextProvider>
     </>
   )
 }

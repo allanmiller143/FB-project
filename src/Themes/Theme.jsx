@@ -21,6 +21,7 @@ const theme = createTheme({
       primary: '#1A1A1A',
       secondary: '#5F6368',
       light: '#FFFFFF', // Texto claro para contraste em fundos escuros
+      secondaryLight: '#B0BEC5', // Texto secundário claro
       dark: '#000000', // Texto escuro para contraste em fundos claros
     },
   },

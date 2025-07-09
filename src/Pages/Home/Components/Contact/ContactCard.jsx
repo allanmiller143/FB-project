@@ -31,7 +31,7 @@ const ContactCard = () => {
           mx: 'auto',
           mb: 5,
           px: { xs: 2, md: 1 },
-          mt: 6,
+          mt:{ xs: 4, md: 8},
         }}
       >
         <Card

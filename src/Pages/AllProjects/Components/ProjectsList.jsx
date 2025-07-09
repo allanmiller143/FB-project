@@ -3,11 +3,10 @@ import React, { useRef } from 'react'
 import { Box, Typography, Card, CardContent, Chip, Avatar, Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import { projetosData } from './Data'
 
 const MotionCard = motion(Card)
 
-const Projects = () => {
+const Projects = ({projetosData}) => {
   const navigate = useNavigate()
   const containerRef = useRef(null)
   const isInView = useInView(containerRef, { once: true, margin: '-100px' }) // dispara só uma vez
@@ -18,8 +17,7 @@ const Projects = () => {
       sx={{
         maxWidth: 'lg',
         mx: 'auto',
-        px: { xs: 2, md: 1 },
-        py: 6,
+        py: 4,
       }}
     >
       <Typography
@@ -27,12 +25,12 @@ const Projects = () => {
         fontWeight={600}
         sx={{ mb: 4, textAlign: 'left', borderBottom: '4px solid #0D3B66', pb: 1, color: 'primary.main' }}
       >
-        Projetos em Destaque
+        Projetos
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {projetosData.slice(0,5).map((projeto, index) => (
-           <MotionCard
+        {projetosData.map((projeto, index) => (
+          <MotionCard
             key={projeto.id}
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -166,15 +164,6 @@ const Projects = () => {
             </CardContent>
           </MotionCard>
         ))}
-      </Box>
-      <Box sx={{ width: '100%', display: 'flex', justifyContent: 'end', mt: 2 }}>
-        <Button
-          variant="outlined"
-          sx={{ textTransform: 'none', fontWeight: 600, padding: '6px 12px' }}
-          onClick={() => window.location.href = '/projetos'}
-        >
-          Ver mais projetos
-        </Button>
       </Box>
     </Box>
   )

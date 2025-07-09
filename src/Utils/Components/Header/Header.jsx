@@ -6,8 +6,9 @@ import { useNavigate, useLocation } from 'react-router-dom'
 const navItems = [
   { label: 'Início', path: '/' },
   { label: 'Projetos', path: '/projetos' },
-  { label: 'Equipe', path: '/membros' },
+  { label: 'Equipe', path: '/time' },
   { label: 'Notícias', path: '/noticias' },
+  { label: 'Contato', path: '/contato' }
 ]
 
 const Header = () => {
