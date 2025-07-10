@@ -16,8 +16,8 @@ const TeamMemberCard = () => {
                 textAlign: 'left',
                 height: '100%',
                 display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
+                flexDirection: {xs:'row',md:'row'},
+                alignItems:  {xs:'start',md: 'center'},
                 py:2,
                 gap:2
               }}
@@ -26,8 +26,8 @@ const TeamMemberCard = () => {
                 src={member.image}
                 alt={member.name}
                 sx={{
-                  width: 170,
-                  height: 170,
+                  width: {xs:100,md:170},
+                  height: {xs:100,md:170},
                   border: '3px solid #0D3B66'
                 }}
               />
@@ -43,14 +43,14 @@ const TeamMemberCard = () => {
                 <Typography variant="body2" sx={{ fontSize: 13 }}>
                     {member.description}
                 </Typography>
-                <Stack direction="row" spacing={1} justifyContent="center">
-                    <IconButton href={member.socials.x} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main' }}>
+                <Stack direction="row" spacing={1} justifyContent="center" mt={{xs : 1, md:0}}>
+                    <IconButton href={member.socials.x} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' },}}>
                     <FaXTwitter />
                     </IconButton>
-                    <IconButton href={member.socials.instagram} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main' }}>
+                    <IconButton href={member.socials.instagram} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' }, }}>
                     <FaInstagram />
                     </IconButton>
-                    <IconButton href={member.socials.linkedin} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main' }}>
+                    <IconButton href={member.socials.linkedin} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' }, }}>
                     <FaLinkedin />
                     </IconButton>
                 </Stack>

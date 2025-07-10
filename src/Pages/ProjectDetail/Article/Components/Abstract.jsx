@@ -7,7 +7,7 @@ const Abstract = ({ projeto }) => {
   const [expanded, setExpanded] = useState(true)
 
   return (
-    <Box sx={{ maxWidth: 'lg', mx: 'auto', py: 3 }}>
+    <Box sx={{ maxWidth: 'lg', mx: 'auto' }}>
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={2}>
         <Typography variant="h5" fontWeight={600} color='primary.main'>
           Abstract

@@ -16,7 +16,7 @@ const HeroSection = ({ projeto }) => {
         transition={{ duration: 0.9 }}
         sx={{ flex: 1 }}
        >
-        <MotionTypography variant="h3" fontWeight={400} color="primary.main" gutterBottom sx ={{fontSize:{xs:'2Rem', md:'3Rem'}}}>
+        <MotionTypography variant="h3" fontWeight={400} color="primary.main" gutterBottom sx ={{fontSize:{xs:'1.5Rem', md:'3Rem'}}}>
            {projeto.titulo}
         </MotionTypography>
         <MotionTypography variant="subtitle1" color="text.secondary" gutterBottom>
@@ -55,7 +55,7 @@ const HeroSection = ({ projeto }) => {
             component="img"
             src={projeto.image}
             alt={projeto.titulo}
-            sx={{ width: '100%', maxHeight: 400, objectFit: 'cover', borderRadius: 2, mb: 2 }}
+            sx={{ width: '100%', maxHeight: { xs:260,md:400}, objectFit: 'cover', borderRadius: 2, mb: 2 }}
             />
         )}
 
