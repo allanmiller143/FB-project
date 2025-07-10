@@ -129,7 +129,7 @@ const News = ({label= 'Últimas noticias'}) => {
           sx={{ textTransform: 'none', fontWeight: 600, display: 'flex', alignSelf: 'end', padding: '6px 12px' }}
           onClick={() => window.location.href = '/noticias'}
         >
-          Ver + notícias
+          Ver mais notícias
         </Button>
        </Box>
     </Box>

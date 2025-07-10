@@ -19,7 +19,7 @@ export const projetosData = [
     data: '2024-08-10',
     autores_info: [
       { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-      { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+      { nome: 'Márcio ', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
     ],
     dataInicio: '2024-02-01',
     dataFim: null,
@@ -55,7 +55,7 @@ export const projetosData = [
     data: '2024-07-21',
     autores_info: [
       { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-      { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+      { nome: 'Márcio ', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
     ],
     dataInicio: '2024-02-01',
     dataFim: null,
@@ -91,7 +91,7 @@ export const projetosData = [
     data: '2024-09-03',
     autores_info: [
       { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-      { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+      { nome: 'Márcio ', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
     ],
     dataInicio: '2024-02-01',
     dataFim: null,
@@ -127,7 +127,7 @@ export const projetosData = [
     data: '2024-06-14',
     autores_info: [
       { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-      { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+      { nome: 'Márcio ', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
     ],
     dataInicio: '2024-02-01',
     dataFim: null,
@@ -163,7 +163,7 @@ export const projetosData = [
   data: '2024-05-22',
   autores_info: [
     { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-    { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+    { nome: 'Márcio ', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
   ],
   dataInicio: '2024-02-01',
   dataFim: null,
@@ -199,7 +199,7 @@ export const projetosData = [
   data: '2024-05-23',
   autores_info: [
     { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-    { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+    { nome: 'Márcio', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
   ],
   dataInicio: '2024-02-01',
   dataFim: null,
@@ -235,7 +235,7 @@ export const projetosData = [
   data: '2024-07-02',
   autores_info: [
     { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-    { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+    { nome: 'Márcio', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
   ],
   dataInicio: '2024-02-01',
   dataFim: null,
@@ -271,7 +271,7 @@ export const projetosData = [
   data: '2024-06-30',
   autores_info: [
     { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-    { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+    { nome: 'Márcio', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
   ],
   dataInicio: '2024-02-01',
   dataFim: null,
@@ -307,7 +307,7 @@ export const projetosData = [
   data: '2024-06-25',
   autores_info: [
     { nome: 'Allan Miller Silva Lima', lattes: 'https://lates do usuario', img: Autor1, função: 'Mestrando' },
-    { nome: 'Márcio não sei de que', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
+    { nome: 'Márcio', lattes: 'https://lates do usuario', img: Autor2, função: 'Doutorando' }
   ],
   dataInicio: '2024-02-01',
   dataFim: null,
