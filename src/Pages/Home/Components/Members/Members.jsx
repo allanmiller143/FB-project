@@ -154,7 +154,7 @@ const Members = () => {
         <Button
           variant="outlined"
           sx={{ textTransform: 'none', fontWeight: 600, display:'flex',margin: {xs: '0 auto',md:'0'}, alignSelf:'center', }}
-          onClick={() => window.location.href = '/sobre'}
+          onClick={() => window.location.href = '/time'}
         >
           Saiba mais sobre nossa equipe
         </Button>
