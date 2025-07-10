@@ -65,6 +65,7 @@ const Projects = () => {
                   flexShrink: 0,
                   borderRadius: 2,
                   objectFit: 'cover',
+                  display:{xs:'none',md:'block'}
                 }}
               />
             )}
