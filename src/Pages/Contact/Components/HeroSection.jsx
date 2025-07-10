@@ -40,7 +40,7 @@ const HeroSection = () => {
         <Box sx = {{ width :'100%', maxWidth:'lg', mx:'auto', display :'flex', gap: 5, justifyContent: 'space-between', alignItems: 'center', flexDirection: { xs: 'column', md: 'row' }, py: {xs:1,md:3}, px: { xs: 2, md: 2 } }}>                                       
             <Box >                                         
                 <Box> 
-                    <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 10, }}>
+                    <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 10,textAlign:{xs:'center',md:'left'}, }}>
                         <Typography variant="h4" fontWeight={700} gutterBottom color="text.light">
                             Contate-nos
                         </Typography>
@@ -50,7 +50,7 @@ const HeroSection = () => {
                     </Box>
                 </Box>
                 <Box>
-                    <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 2 }}>
+                    <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 2,textAlign:{xs:'center',md:'left'}, }}>
                         <Typography variant="h5" fontWeight={700} gutterBottom color="primary.main">
                             Informações de contato
                         </Typography>

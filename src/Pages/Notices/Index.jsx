@@ -1,17 +1,29 @@
-import React from 'react'
-import { Typography, Button, Box } from '@mui/material'
-import PageContainer from '../../Utils/Components/Containers/PageContainer'
+// src/pages/News/index.jsx
+import React from 'react';
+import { Box, Typography, Grid, Stack, Divider } from '@mui/material';
+import PageContainer from '../../Utils/Components/Containers/PageContainer';
+import {newsData} from '../../Pages/Home/Components/News/Data'
+import HeroCard from './Components/HeroCard';
+import NewsList from './Components/NewsList';
+import TagsSelector from './Components/TagsSelector';
+
+
 
 const News = () => {
-  return (
-    <PageContainer title="Noticias" description="Esta página é responsável por exibir as principais noticias sobre o time de pesquisa do professor Fernando Buarque">
-      <Box sx = {{maxWidth:'lg', margin:'0 auto', px:1, height:'50vh', display:'flex', justifyContent:'center', alignItems:'center'}}>
-        <Typography>
-          Página ainda em desenvolvimento  
-        </Typography>
-      </Box>     
-    </PageContainer>
-  )
-}
 
-export default News
+  return (
+    <PageContainer
+      title="Notícias"
+      description="Esta página é responsável por exibir as principais notícias sobre o time de pesquisa do professor Fernando Buarque"
+    >
+      <Box sx={{maxWidth:'lg', margin:'0 auto', my:{xs:0, md:7}, px:1}}>
+         <HeroCard noticia={newsData[0]}/>
+         <NewsList/>
+         {/* <TagsSelector/> */}
+      </Box>
+
+    </PageContainer>
+  );
+};
+
+export default News;

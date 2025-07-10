@@ -1,14 +1,36 @@
+// src/components/Header.jsx
 import React, { useState } from 'react'
-import {Box,Container,Typography,Button,IconButton,Drawer,List,ListItem,ListItemButton,ListItemText,} from '@mui/material'
+import {
+  Box,
+  Container,
+  Typography,
+  Button,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Divider
+} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
+import HomeIcon from '@mui/icons-material/Home'
+import WorkspacesIcon from '@mui/icons-material/Workspaces'
+import GroupIcon from '@mui/icons-material/Group'
+import ArticleIcon from '@mui/icons-material/Article'
+import ContactMailIcon from '@mui/icons-material/ContactMail'
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
+import LogoutIcon from '@mui/icons-material/Logout'
+import Brightness4Icon from '@mui/icons-material/Brightness4'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const navItems = [
-  { label: 'Início', path: '/' },
-  { label: 'Projetos', path: '/projetos' },
-  { label: 'Equipe', path: '/time' },
-  { label: 'Notícias', path: '/noticias' },
-  { label: 'Contato', path: '/contato' }
+  { label: 'Início', path: '/', icon: <HomeIcon /> },
+  { label: 'Projetos', path: '/projetos', icon: <WorkspacesIcon /> },
+  { label: 'Equipe', path: '/time', icon: <GroupIcon /> },
+  { label: 'Notícias', path: '/noticias', icon: <ArticleIcon /> },
+  { label: 'Contato', path: '/contato', icon: <ContactMailIcon /> }
 ]
 
 const Header = () => {
@@ -26,8 +48,8 @@ const Header = () => {
         zIndex: 1000,
         background: 'linear-gradient(to right, #f4f6f8, #ffffff)',
         backdropFilter: 'blur(6px)',
-        borderBottom: '1px solid transparent',
-        py: 4,
+        borderBottom: '1px solid #e0e0e0',
+        py: 3,
       }}
     >
       <Container
@@ -35,7 +57,6 @@ const Header = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          px: { xs: 2, md: 3 },
         }}
       >
         {/* LOGO / TÍTULO */}
@@ -58,16 +79,15 @@ const Header = () => {
           Pesquisa | Prof. F. Buarque
         </Typography>
 
-        {/* MENU DESKTOP */}
+        {/* DESKTOP MENU */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>
           {navItems.map((item) => (
             <Button
               key={item.label}
               onClick={() => navigate(item.path)}
               sx={{
-                fontFamily: `'IBM Plex Sans', sans-serif`,
                 fontWeight: isActive(item.path) ? 600 : 400,
-                fontSize: '1rem',
+                fontSize: isActive(item.path) ? '1.1rem' : '1rem',
                 color: isActive(item.path) ? 'primary.main' : 'text.primary',
                 textTransform: 'none',
                 backgroundColor: 'transparent',
@@ -75,7 +95,6 @@ const Header = () => {
                 minWidth: 'auto',
                 '&:hover': {
                   color: 'primary.main',
-                  backgroundColor: 'transparent',
                 },
               }}
             >
@@ -84,7 +103,7 @@ const Header = () => {
           ))}
         </Box>
 
-        {/* MOBILE MENU */}
+        {/* BOTÃO MENU MOBILE */}
         <IconButton
           onClick={() => setDrawerOpen(true)}
           sx={{ display: { xs: 'flex', md: 'none' } }}
@@ -92,25 +111,56 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
+        {/* DRAWER MOBILE MODERNO */}
         <Drawer
-          anchor="right"
+          anchor="left"
           open={drawerOpen}
           onClose={() => setDrawerOpen(false)}
+          PaperProps={{
+            sx: {
+              width: 280,
+              bgcolor: '#fefefe',
+              borderTopRightRadius: 20,
+              borderBottomRightRadius: 20,
+              boxShadow: 6,
+              px: 2,
+              py: 4,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }
+          }}
         >
-          <Box sx={{ width: 260, mt: 4 }}>
-            <List>
+          <Box>
+            <Typography variant="h6" fontWeight={700} sx={{ mb: 4, pl: 1, color: 'primary.main' }}>
+              Menu
+            </Typography>
+
+            <List sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
               {navItems.map((item) => (
                 <ListItem key={item.label} disablePadding>
-                  <ListItemButton onClick={() => {
-                    navigate(item.path)
-                    setDrawerOpen(false)
-                  }}>
+                  <ListItemButton
+                    onClick={() => {
+                      navigate(item.path)
+                      setDrawerOpen(false)
+                    }}
+                    sx={{
+                      borderRadius: 2,
+                      px: 2,
+                      py: 1.5,
+                      bgcolor: isActive(item.path) ? 'primary.main' : 'transparent',
+                      '&:hover': {
+                        bgcolor: 'primary.light',
+                      },
+                    }}
+                  >
+                    <ListItemIcon sx={{ color: isActive(item.path) ? 'text.light' : 'text.secondary' }}>
+                      {item.icon}
+                    </ListItemIcon>
                     <ListItemText
                       primary={item.label}
                       primaryTypographyProps={{
-                        fontFamily: `'IBM Plex Sans', sans-serif`,
-                        fontWeight: isActive(item.path) ? 600 : 400,
-                        color: isActive(item.path) ? 'primary.main' : 'text.primary',
+                        color: isActive(item.path) ? 'text.light' : 'text.primary',
                       }}
                     />
                   </ListItemButton>
@@ -118,6 +168,13 @@ const Header = () => {
               ))}
             </List>
           </Box>
+
+          {/* RODAPÉ DO MENU (opcional) */}
+          <Box sx={{ mt: 3 }}>
+            <Typography variant="caption" color="text.secondary">
+              © {new Date().getFullYear()} Prof. F. Buarque
+            </Typography>
+          </Box>
         </Drawer>
       </Container>
     </Box>

@@ -1,12 +1,28 @@
 import React from 'react'
-import {Box,Typography,Button,Container
-} from '@mui/material'
+import {Box,Typography,Button,Container} from '@mui/material'
 import TextInput from '../../../Utils/Components/Inputs/TextInput'
+import {toast} from 'sonner' 
 
 const ContactForm = () => {
   const [email, setEmail] = React.useState('')
   const [name, setName] = React.useState('')
   const [message, setMessage] = React.useState('')
+
+  const handleSend = () =>{
+    if (!name.trim()) {
+      toast.error("Por favor, digite seu nome.");
+      return;
+    }    
+    if (!email.trim()) {
+      toast.error("Por favor, digite seu email.");
+      return;
+    }
+    if (!message.trim()) {
+      toast.error("Por favor, digite uma mensagem.");
+      return;
+    }
+    toast.success("Mensagem enviada com sucesso! (mas ainda não funciona hehe!) ->  se vc viu essa mensagem o desenvolvedor fica muito feliz, ta testando o site mesmo!!");
+  }
 
   return (
     <Box sx={{ py: 8 }}>
@@ -37,12 +53,12 @@ const ContactForm = () => {
             <TextInput
               placeholder="Nome"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              setValue={setName}
             />
             <TextInput
               placeholder="Email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              setValue={setEmail}
               sx={{ mt: 2 }}
             />
             <TextInput
@@ -50,12 +66,13 @@ const ContactForm = () => {
               multiline
               rows={4}
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              setValue={setMessage}
               sx={{ mt: 2 }}
             />
             <Button
               variant="outlined"
               sx={{ textTransform: 'none', mt: 3, color: 'text.light', borderColor: 'text.light' }}
+              onClick={handleSend}
             >
               Enviar
             </Button>

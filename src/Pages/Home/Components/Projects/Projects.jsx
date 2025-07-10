@@ -34,7 +34,7 @@ const Projects = () => {
         {projetosData.slice(0,5).map((projeto, index) => (
            <MotionCard
             key={projeto.id}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 0 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: index * 0.1 }}
             sx={{

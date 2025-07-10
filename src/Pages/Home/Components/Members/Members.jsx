@@ -125,6 +125,7 @@ const Members = () => {
             fontSize: '0.75rem',
             letterSpacing: 1,
             color: 'text.secondary',
+            textAlign:{xs:'center',md:'left'},
             mb: 2,
           }}
         >
@@ -139,20 +140,20 @@ const Members = () => {
             color: 'primary.main',
             fontWeight: 400,
             lineHeight: 1.1,
+            textAlign:{xs:'center',md:'left'},
           }}
         >
           Pesquisadores unidos, ideias ilimitadas
         </Typography>
         <Typography
-          sx={{ fontSize: '0.95rem', color: 'text.secondary', mb: 3 }}
-        >
+          sx={{ fontSize: '0.95rem', color: 'text.secondary', mb: 3, textAlign:{xs:'center',md:'left'}}}>
           Nosso time de pesquisa é formado por professores, alunos de graduação,
           mestrado e doutorado. Atuamos em diversas áreas com foco em ciência e
           inovação com propósito.
         </Typography>
         <Button
           variant="outlined"
-          sx={{ textTransform: 'none', fontWeight: 600 }}
+          sx={{ textTransform: 'none', fontWeight: 600, display:'flex',margin: {xs: '0 auto',md:'0'}, alignSelf:'center', }}
           onClick={() => window.location.href = '/sobre'}
         >
           Saiba mais sobre nossa equipe

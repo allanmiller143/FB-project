@@ -17,7 +17,7 @@ const Index = () => {
         <ContactForm/>
         <Members/>
         
-        {/* <ContactCard/> */}
+        <ContactCard/>
     
         
         

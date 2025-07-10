@@ -1,14 +1,6 @@
 // src/components/News.jsx
 import React from 'react'
-import {
-  Box,
-  Typography,
-  Card,
-  CardMedia,
-  CardContent,
-  Chip,
-  Button,
-} from '@mui/material'
+import {Box,Typography,Card,CardMedia,CardContent,Chip,Button,} from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Slider from 'react-slick'
@@ -31,11 +23,11 @@ const sliderSettings = {
   ],
 }
 
-const News = () => {
+const News = ({label= 'Últimas noticias'}) => {
   const navigate = useNavigate()
 
   return (
-    <Box sx={{ px: { xs: 2, md: 1 }, py: 6, maxWidth: 'lg', mx: 'auto' }}>
+    <Box sx={{ px: { xs: 1 }, py: 6, maxWidth: 'lg', mx: 'auto' }}>
       <Typography
         variant="h5"
         fontWeight={600}
@@ -46,7 +38,7 @@ const News = () => {
           pb: 1,
         }}
       >
-        Últimas Notícias
+        {label}
       </Typography>
 
       <Slider {...sliderSettings}>

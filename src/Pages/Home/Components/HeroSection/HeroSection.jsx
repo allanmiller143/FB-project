@@ -41,6 +41,7 @@ const HeroSection = () => {
                 fontSize: { xs: '2rem', md: '3.4rem' },
                 color: 'primary.main',
                 mb: 3,
+                textAlign:{xs:'center',md:'left'},
               }}
             >
               Grupo de Pesquisa
@@ -57,6 +58,7 @@ const HeroSection = () => {
                 fontFamily: `'IBM Plex Sans', sans-serif`,
                 maxWidth: 600,
                 mb: {xs: 2, md: 4},
+                textAlign:{xs:'center',md:'left'},
               }}
             >
               Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.
@@ -64,7 +66,7 @@ const HeroSection = () => {
 
             <Button
               variant="outlined"
-              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 2}}
+              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 2,display:'flex', margin: {xs: '0 auto',md:'0'}}}
               size="small"
               color="primary"
               onClick={() => navigate('/projetos')}
@@ -79,6 +81,7 @@ const HeroSection = () => {
                 display: 'block',
                 color: 'text.secondary',
                 fontSize: { xs: '0.75rem', md: '0.85rem' },
+                textAlign:{xs:'center',md:'left'},
               }}
             >
               Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco

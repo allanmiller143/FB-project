@@ -18,17 +18,17 @@ const Footer = () => {
         <Grid container spacing={4} alignItems="center" justifyContent="space-between">
           {/* Bloco de Texto */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h6" fontWeight={700} sx={{ color: 'primary.main', mb: 1 }}>
+            <Typography variant="h6" fontWeight={700} sx={{ color: 'primary.main', mb: 1,textAlign:{xs:'center',md:'left'}, }}>
               Laboratório de Pesquisa em IA & Ciência de Dados
             </Typography>
-            <Typography variant="body2" sx={{ color: '#555', maxWidth: 500 }}>
+            <Typography variant="body2" sx={{ color: '#555', maxWidth: 500,textAlign:{xs:'center',md:'left'}, }}>
               Pesquisa aplicada em Inteligência Artificial, Ontologias e Aprendizado de Máquina para resolver desafios reais nas áreas da saúde, meio ambiente e engenharia.
             </Typography>
           </Grid>
 
           {/* Ícones sociais */}
           <Grid item xs={12} md={6}>
-            <Stack direction="row" spacing={2} justifyContent={{ xs: 'flex-start', md: 'flex-end' }}>
+            <Stack direction="row" spacing={2} justifyContent={{ xs: 'center', md: 'flex-end' }}>
               <IconButton href="https://github.com/seulab" target="_blank">
                 <GitHub sx={{ color: '#0D3B66' }} />
               </IconButton>
