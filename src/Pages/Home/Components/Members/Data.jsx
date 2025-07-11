@@ -2,9 +2,9 @@ import Fernando from '../../../../assets/Members/Fernando.jpg';
 import Allan from '../../../../assets/Members/Am.png';
 import Andina from '../../../../assets/Members/A.png';
 import Marcio from '../../../../assets/Members/Marcio.png';
-import Renata from '../../../../assets/Members/Renata.png';
+import Renata from '../../../../assets/Members/Renata.jpg';
 import Mateus from '../../../../assets/Members/Mateus_Amorim.png';
-import Durval from '../../../../assets/Members/Durval.png';
+import Durval from '../../../../assets/Members/Durval.jpg';
 
 export const membrosDestaque = [
   {

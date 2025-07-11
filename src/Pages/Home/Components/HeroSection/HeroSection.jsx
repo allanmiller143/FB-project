@@ -44,9 +44,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Grupo de Pesquisa
-              <span style={{ color: 'primary.main' }}> Prof. Fernando Buarque</span>
-
+              Grupo de Pesquisa em Inteligência Computacional (CIRG@UPE)
             </MotionTypography>
 
             <Typography

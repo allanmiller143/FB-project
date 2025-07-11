@@ -4,130 +4,51 @@ import AI3 from '../../../../assets/News/IA3.jpg';
 import AI4 from '../../../../assets/News/IA4.jpg';
 import AI5 from '../../../../assets/News/IA5.jpg';
 
+import New1 from '../../../../assets/News/New1/primeiraReuniao.png'
+
+import New2 from '../../../../assets/News/New2/RegiaoMilitar.png'
+
+import New3 from '../../../../assets/News/New3/PauloVarjalProject.png'
+
+import New4 from '../../../../assets/News/New4/Comissao.png'
+
 export const newsData = [
   {
     id: '1',
-    slug: 'wellness-retreats-peace-in-busy-world',
-    title: 'The Rise of Wellness Retreats: Finding Peace in a Busy World',
-    resumo: 'Wellness retreats are becoming a trend as people seek peace away from fast-paced life.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
+    slug: '',
+    title: 'Participação da POLI/UPE na Conferência Ibérica de Sistemas de Informação',
+    resumo: 'Representantes da Escola Politécnica da UPE marcaram presença na Conferência Ibérica de Sistemas de Informação, integrando uma comissão composta por docentes e pesquisadores do grupo CIRG.',
+    content: `Durante a Conferência Ibérica de Sistemas de Informação (CISI 2025), uma comissão da Escola Politécnica da Universidade de Pernambuco (POLI/UPE) esteve presente representando a instituição e o Grupo de Pesquisa em Inteligência Computacional (CIRG).
 
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,
-    leituraMinutos: 4,
-    category: 'Lifestyle',
-    tags: ['IA', 'Saúde Mental', 'Pesquisa'],
-    date: '2024-07-23',
-    image: AI1,
+A comissão foi composta por Paulo Varjal, Prof. Fernando Buarque, Gabriela, Prof. Maria Lencastre e Julio Taverna — da esquerda para a direita na imagem registrada no evento. A participação evidenciou a presença ativa da POLI/UPE no cenário internacional de pesquisa em Sistemas de Informação.`,
+    leituraMinutos: 2,
+    category: 'Conferências',
+    tags: ['Confêrencias', 'IA', 'Palestras'],
+    date: '2025-06-16',
+    image: New4,
     destaque: true,
     autores: [
       {
-        nome: 'Allan Miller Silva Lima',
-        lattes: 'https://lattes.cnpq.br/exemplo1'
-      },
-      {
-        nome: 'Fernando Buarque',
-        lattes: 'https://lattes.cnpq.br/exemplo1'
+        nome: 'Márcio José de Souza',
+        lattes: 'https://lattes.cnpq.br/exemplo2'
       }
-    ],
-    images: [AI1,AI2,AI3,AI4]
+    ]
   },
   {
     id: '2',
-    slug: 'work-life-balance-healthier-happier-you',
-    title: 'Work-Life Balance: Tips for a Healthier, Happier You',
-    resumo: 'Dicas práticas para equilibrar vida pessoal e profissional com mais bem-estar.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
+    slug: '',
+    title: 'Apresentação de artigo na Conferência Ibérica de Sistemas de Informação 2025',
+    resumo: 'Entre os dias 16 e 19 de junho de 2025, o mestrando Paulo Varjal apresentou um artigo na Conferência Ibérica de Sistemas de Informação, resultado de sua pesquisa orientada pelo professor Fernando Buarque.',
+    content: `Entre os dias 16 e 19 de junho de 2025, foi realizada a Conferência Ibérica de Sistemas de Informação (CISI 2025), um evento internacional voltado à discussão de avanços e aplicações em Sistemas de Informação.
 
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
+Durante a conferência, o pesquisador Paulo Varjal, mestrando vinculado ao Grupo CIRG/UPE, apresentou um artigo científico desenvolvido como parte de sua pesquisa de mestrado. O trabalho é resultado direto de sua investigação acadêmica e contou com orientação do professor Fernando Buarque de Lima Neto, líder do grupo de pesquisa CIRG.
 
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 3,
-    category: 'IA',
-    tags: ['IA', 'Projetos', 'Medicina'],
-    date: '2024-07-23',
-    image: AI2,
-    destaque: false,
-    autores: [
-      {
-        nome: 'Márcio José de Souza',
-        lattes: 'https://lattes.cnpq.br/exemplo2'
-      }
-    ]
-  },
-  {
-    id: '3',
-    slug: 'home-decor-ideas-on-budget',
-    title: 'Home Décor Ideas: Transforming Your Space on a Budget',
-    resumo: 'Ideias criativas para decorar sua casa gastando pouco.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
-
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 5,
-    category: 'Lifestyle',
-    tags: ['IA', 'Educação', 'Minimalismo'],
-    date: '2024-07-23',
-    image: AI3,
-    destaque: false,
-    autores: [
-      {
-        nome: 'Allan Miller Silva Lima',
-        lattes: 'https://lattes.cnpq.br/exemplo1'
-      }
-    ],
-    images: [AI1,AI2,AI3,AI4]
-  },
-  {
-    id: '4',
-    slug: 'fashion-trends-2024',
-    title: "Fashion Trends for 2024: What's In and What's Out",
-    resumo: 'Veja as tendências de moda para 2024: o que continua em alta e o que sai de cena.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
-
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 6,
-    category: 'Lifestyle',
-    tags: ['Pesquisa', 'Ética', 'Inovação Social'],
-    date: '2024-07-23',
-    image: AI4,
-    destaque: true,
-    autores: [
-      {
-        nome: 'Allan Miller Silva Lima',
-        lattes: 'https://lattes.cnpq.br/exemplo1'
-      },
-      {
-        nome: 'Márcio José de Souza',
-        lattes: 'https://lattes.cnpq.br/exemplo2'
-      }
-    ]
-  },
-  {
-    id: '5',
-    slug: 'mental-health-global-priority',
-    title: 'Mental Health Awareness: A Global Priority',
-    resumo: 'A saúde mental se tornou pauta prioritária em todo o mundo — e com razão.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
-
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 4,
-    category: 'Health',
-    tags: ['Saúde Mental', 'IA na Educação', 'Healthy'],
-    date: '2024-07-23',
-    image: AI5,
+A apresentação representa um marco importante na trajetória de pesquisa do aluno e reforça a atuação internacional do grupo, destacando a relevância das pesquisas realizadas na Universidade de Pernambuco no cenário ibérico. `,
+    leituraMinutos: 3,
+    category: 'Apresentação de artigo',
+    tags: ['Projetos', 'IA', 'Publicações'],
+    date: '2025-06-17',
+    image: New3,
     destaque: true,
     autores: [
       {
@@ -138,21 +59,18 @@ Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais,
     images: []
   },
   {
-    id: '6',
-    slug: 'mental-health-global-priority',
-    title: 'Mental Health Awareness: A Global Priority',
-    resumo: 'A saúde mental se tornou pauta prioritária em todo o mundo — e com razão.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
+    id: '3',
+    slug: '',
+    title: 'Professor Fernando Buarque palestra sobre Inteligência Artificial no Serviço Público na 7ª Região Militar',
+    resumo: 'No dia 07 de maio de 2025, o professor Fernando Buarque participou do “Seminário de Inteligência Artificial para Administração Pública” na 7ª Região Militar, abordando as aplicações da IA no setor público.',
+    content: `No dia 07 de maio de 2025, o professor Fernando Buarque de Lima Neto, líder do Grupo de Pesquisa em Inteligência Computacional (CIRG/UPE), foi palestrante no “Seminário de Inteligência Artificial para Administração Pública”, realizado na sede da 7ª Região Militar.
 
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 4,
-    category: 'Health',
-    tags: ['Saúde Mental', 'IA na Educação', 'Healthy'],
-    date: '2024-07-23',
-    image: AI3,
+Com o tema “Aplicação da Inteligência Artificial no Serviço Público”, o professor apresentou como as técnicas modernas de IA podem contribuir para otimizar processos administrativos, melhorar a tomada de decisões estratégicas e oferecer serviços mais eficientes e personalizados à população. A palestra destacou experiências práticas, incluindo projetos desenvolvidos pelo CIRG/UPE em parceria com instituições públicas, reforçando o papel da universidade na inovação tecnológica voltada ao bem comum. O evento reuniu representantes das forças armadas, gestores públicos e pesquisadores, promovendo um ambiente de troca de conhecimento entre os setores civil e militar sobre os desafios e possibilidades do uso responsável e ético da Inteligência Artificial na administração pública.`,
+    leituraMinutos: 3,
+    category: 'Palestras',
+    tags: ['Pesquisa', 'Projetos'],
+    date: '2025-04-07',
+    image: New2,
     destaque: true,
     autores: [
       {
@@ -160,75 +78,32 @@ Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais,
         lattes: 'https://lattes.cnpq.br/exemplo2'
       }
     ],
-    images: [AI1,AI2,AI3]
+    images: []
   },
   {
-    id: '7',
-    slug: 'mental-health-global-priority',
-    title: 'Mental Health Awareness: A Global Priority',
-    resumo: 'A saúde mental se tornou pauta prioritária em todo o mundo — e com razão.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
-
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 4,
-    category: 'Health',
-    tags: ['Saúde Mental', 'IA na Educação', 'Healthy'],
-    date: '2024-07-23',
-    image: AI1,
+    id: '4',
+    slug: '',
+    title: 'Primeira reunião do grupo de pesquisa CIRG/UPE do semestre 2025.1',
+    resumo: 'Na primeira reunião do grupo de pesquisa  CIRG/UPE, foi realizada a apresentação de veteranos e novos membros ao grupo.',
+    content: `A primeira reunião do grupo de pesquisa CIRG/UPE no semestre 2025.1 marcou o início oficial das atividades do ano, promovendo um ambiente de boas-vindas tanto para veteranos quanto para os novos integrantes. Durante o encontro, o professor Fernando Buarque conduziu uma introdução inspiradora, destacando o papel da ciência como ferramenta de transformação e impacto social. Ele apresentou os principais objetivos do grupo CIRG, reforçou a importância da pesquisa colaborativa e detalhou como funcionam as dinâmicas das reuniões: ciclos de discussão técnica, apresentações de projetos e contribuições interdisciplinares.
+              
+    A reunião também foi uma oportunidade para os membros se conhecerem melhor, trocarem experiências e alinharem expectativas para os desafios e oportunidades do semestre. Com entusiasmo renovado, o grupo deu início a mais um ciclo de estudos, inovação e produção científica.
+    
+    A imagem mostra alguns Integrantes do Grupo de Pesquisa CIRG/UPE, 2025. Márcio Cabral, Hugo Amorim, Maria Renata, Paulo Varjal, Prof. Fernando Buarque, Lucas Ferraz, Ricardo Melo, Allan Miller, Julio Taverna e Paulo Ndubo (Da esquerda para à direita)`,
+    
+    
+    leituraMinutos: 3,
+    category: 'Reuniões',
+    tags: ['Reunião', 'Encontro', 'Debate',],
+    date: '2025-02-20',
+    image: New1,
     destaque: true,
     autores: [
       {
-        nome: 'Márcio José de Souza',
-        lattes: 'https://lattes.cnpq.br/exemplo2'
-      }
-    ]
-  },
-  {
-    id: '8',
-    slug: 'mental-health-global-priority',
-    title: 'Mental Health Awareness: A Global Priority',
-    resumo: 'A saúde mental se tornou pauta prioritária em todo o mundo — e com razão.',
-    content: ` Em meio ao ritmo acelerado da vida moderna, cada vez mais pessoas estão sentindo os efeitos colaterais do estresse crônico, da ansiedade e da desconexão com a própria saúde física e emocional. Nesse cenário, os retiros de bem-estar vêm ganhando destaque como uma poderosa alternativa para aqueles que buscam desacelerar, reconectar-se consigo mesmos e restabelecer o equilíbrio entre corpo, mente e espírito.
-Esses retiros não são apenas uma tendência passageira, mas uma resposta direta às pressões de um estilo de vida que exige produtividade constante. Realizados em locais geralmente cercados pela natureza — como montanhas, praias isoladas ou regiões rurais tranquilas — eles combinam práticas como yoga, meditação, alimentação saudável, massagens terapêuticas e vivências de imersão com a natureza.
-Na Europa, destinos como os Alpes Suíços, as praias da Grécia e os campos da Toscana tornaram-se pontos de referência para experiências de autocuidado integrativo. Já na América Latina, países como Costa Rica, México e Brasil têm se destacado por oferecer retiros que valorizam tanto a medicina ancestral quanto abordagens contemporâneas de bem-estar. No Brasil, por exemplo, cresce o número de espaços que unem práticas como o mindfulness com elementos da cultura indígena, ayurvédica ou permacultural.
-
-Além das práticas terapêuticas, os retiros oferecem um ambiente livre de distrações digitais, longe de notificações e cobranças constantes. Essa pausa no fluxo de informações tem sido apontada por especialistas como um fator crucial para a regulação emocional, o alívio de sintomas de burnout e o fortalecimento da saúde mental. Muitos participantes relatam melhorias significativas no sono, na clareza mental e até mesmo na autoestima após períodos relativamente curtos de imersão.Outro aspecto relevante é a comunidade formada durante esses encontros. Ao compartilhar jornadas pessoais com pessoas em busca de objetivos semelhantes, cria-se uma rede de apoio emocional e acolhimento que muitas vezes se estende para além do fim do retiro. Essa sensação de pertencimento tem se mostrado um componente valioso no processo de cura e autodesenvolvimento.A crescente popularização dos retiros de bem-estar também reflete uma mudança cultural mais ampla: o autocuidado deixou de ser visto como luxo e passou a ser compreendido como necessidade básica. Em um mundo cada vez mais conectado e, ao mesmo tempo, mais sobrecarregado, encontrar tempo para parar, respirar e cuidar de si está se tornando um ato revolucionário.
-
-Com agendas cada vez mais lotadas, pressões profissionais e incertezas globais, o investimento em experiências que promovem descanso profundo e reconexão com valores pessoais está deixando de ser um privilégio de poucos para se tornar parte essencial de uma vida saudável. Seja para restaurar a energia, refletir sobre mudanças de vida ou simplesmente silenciar o ruído interno, os retiros de bem-estar são, hoje, uma das formas mais eficazes de regenerar o corpo e a alma. E se o mundo continuar como está, é provável que eles deixem de ser exceção para se tornarem parte indispensável da rotina de milhares de pessoas ao redor do planeta.`,    leituraMinutos: 4,
-    category: 'Health',
-    tags: ['Saúde Mental', 'IA na Educação', 'Healthy'],
-    date: '2024-07-23',
-    image: AI4,
-    destaque: true,
-    autores: [
-      {
-        nome: 'Márcio José de Souza',
+        nome: 'Allan Miller Silva Lima',
         lattes: 'https://lattes.cnpq.br/exemplo2'
       }
     ],
-    images: [AI1,AI2]
-  },
-  {
-    id: '9',
-    slug: 'mental-health-global-priority',
-    title: 'Mental Health Awareness: A Global Priority',
-    resumo: 'A saúde mental se tornou pauta prioritária em todo o mundo — e com razão.',
-    content: `Problemas de saúde mental afetam mais de 1 bilhão de pessoas globalmente. Iniciativas públicas, como campanhas de prevenção e oferta de terapia gratuita, vêm crescendo. O estigma está sendo combatido com informação e acesso. Ainda há muito a avançar, mas o cenário é promissor.`,
-    leituraMinutos: 4,
-    category: 'Health',
-    tags: ['Saúde Mental', 'IA na Educação', 'Healthy'],
-    date: '2024-07-23',
-    image: AI2,
-    destaque: true,
-    autores: [
-      {
-        nome: 'Márcio José de Souza',
-        lattes: 'https://lattes.cnpq.br/exemplo2'
-      }
-    ],
-    images: [AI1,AI2,AI3,AI4]
+    images: []
   }
 ];

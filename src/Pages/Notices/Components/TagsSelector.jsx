@@ -8,6 +8,7 @@ const groupedTags = {
   'Estilo de Vida': ['Lifestyle', 'Healthy', 'Work-Life', 'Minimalismo'],
   'Sociedade': ['Futuro do Trabalho', 'Ética', 'Inovação Social'],
   'Academia e Pesquisa': ['Pesquisa', 'Publicações', 'Projetos', 'Ontologias'],
+  'Rotina': ['Reunião', 'Encontro', 'Debate', ]
 };
 
 const TagsSelector = () => {

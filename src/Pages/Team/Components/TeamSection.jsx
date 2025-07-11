@@ -1,8 +1,8 @@
 // src/components/TeamMemberCard.jsx
 import React from 'react';
-import { Box, Typography, Avatar, IconButton, Stack, Grid, Divider } from '@mui/material';
-import { FaXTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+import { Box, Typography, Avatar, IconButton, Stack, Grid, Divider, Tooltip } from '@mui/material';
 import {members} from './Data'
+import { FaXTwitter, FaInstagram, FaLinkedin, FaGithub, FaUserGraduate, FaGlobe } from 'react-icons/fa6' // Lattes → FaUserGraduate como sugestão
 
 const TeamMemberCard = () => {
   return (
@@ -17,7 +17,7 @@ const TeamMemberCard = () => {
                 height: '100%',
                 display: 'flex',
                 flexDirection: {xs:'row',md:'row'},
-                alignItems:  {xs:'start',md: 'center'},
+                alignItems:  {xs:'start',md: 'start'},
                 py:2,
                 gap:2
               }}
@@ -32,10 +32,19 @@ const TeamMemberCard = () => {
                 }}
               />
 
-              <Box sx ={{display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between', height:'95%'}}>
-                <Typography variant="subtitle1" fontWeight={600}>
-                    {member.name}
-                </Typography>
+              <Box sx ={{display:'flex', flexDirection:'column', alignItems:'flex-start', justifyContent:'start', height:'105%'}}>
+                <Box sx={{display:'flex', alignItems:'center', gap:2, justifyContent:'space-between', width:'100%'}}>
+                  <Typography variant="subtitle1" fontWeight={600}>
+                      {member.name}
+                  </Typography>
+                  {member.foreigner && (
+                  <Tooltip title="Estudante estrangeiro">
+                    <Box sx={{ display: 'flex' }}>
+                      <FaGlobe />
+                    </Box>
+                  </Tooltip>
+                  )}
+                </Box>
                 <Typography variant="body2" color="gray">
                     {member.role}
                 </Typography>
@@ -43,17 +52,88 @@ const TeamMemberCard = () => {
                 <Typography variant="body2" sx={{ fontSize: 13 }}>
                     {member.description}
                 </Typography>
-                <Stack direction="row" spacing={1} justifyContent="center" mt={{xs : 1, md:0}}>
-                    <IconButton href={member.socials.x} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' },}}>
-                    <FaXTwitter />
-                    </IconButton>
-                    <IconButton href={member.socials.instagram} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' }, }}>
-                    <FaInstagram />
-                    </IconButton>
-                    <IconButton href={member.socials.linkedin} target="_blank" sx={{ color: 'text.light', backgroundColor:'primary.main', width: { xs: 30, sm: 36, md: 40 }, height: { xs: 30, sm: 36, md: 40 },fontSize: { xs: '16px', sm: '18px', md: '20px' }, }}>
-                    <FaLinkedin />
-                    </IconButton>
-                </Stack>
+
+<Stack direction="row" spacing={1} justifyContent="center" mt={{ xs: 1, md: 2 }}>
+  {member.socials?.x && (
+    <IconButton
+      href={member.socials.x}
+      target="_blank"
+      sx={{
+        color: 'text.light',
+        backgroundColor: 'primary.main',
+        width: { xs: 30, md: 30 },
+        height: { xs: 30, md: 30 },
+        fontSize: { xs: '16px', sm: '18px', md: '20px' },
+      }}
+    >
+      <FaXTwitter />
+    </IconButton>
+  )}
+
+  {member.socials?.instagram && (
+    <IconButton
+      href={member.socials.instagram}
+      target="_blank"
+      sx={{
+        color: 'text.light',
+        backgroundColor: 'primary.main',
+        width: { xs: 30, md: 30 },
+        height: { xs: 30, md: 30 },
+        fontSize: { xs: '16px', sm: '18px', md: '20px' },
+      }}
+    >
+      <FaInstagram />
+    </IconButton>
+  )}
+
+  {member.socials?.linkedin && (
+    <IconButton
+      href={member.socials.linkedin}
+      target="_blank"
+      sx={{
+        color: 'text.light',
+        backgroundColor: 'primary.main',
+        width: { xs: 30, md: 30 },
+        height: { xs: 30, md: 30 },
+        fontSize: { xs: '16px', sm: '18px', md: '20px' },
+      }}
+    >
+      <FaLinkedin />
+    </IconButton>
+  )}
+
+  {member.socials?.git && (
+    <IconButton
+      href={member.socials.git}
+      target="_blank"
+      sx={{
+        color: 'text.light',
+        backgroundColor: 'primary.main',
+        width: { xs: 30, md: 30 },
+        height: { xs: 30, md: 30 },
+        fontSize: { xs: '16px', sm: '18px', md: '20px' },
+      }}
+    >
+      <FaGithub />
+    </IconButton>
+  )}
+
+  {member.socials?.lattes && (
+    <IconButton
+      href={member.socials.lattes}
+      target="_blank"
+      sx={{
+        color: 'text.light',
+        backgroundColor: 'primary.main',
+        width: { xs: 30, md: 30 },
+        height: { xs: 30, md: 30 },
+        fontSize: { xs: '16px', sm: '18px', md: '20px' },
+      }}
+    >
+      <FaUserGraduate />
+    </IconButton>
+  )}
+</Stack>
               </Box>
             </Box>
           </Grid>

@@ -32,12 +32,7 @@ const HeroCard = ({ noticia }) => {
 
         {/* Conteúdo */}
         <Grid size={{ xs: 12, md: 7 }}>
-          <Stack direction="row" alignItems="center" spacing={1} mb={2}>
-            <Avatar sx={{ width: 40, height: 40 }} />
-            <Typography variant="caption" color="text.secondary">
-              {noticia.autores?.[0]?.nome} · {new Date(noticia.date).toLocaleDateString('pt-BR')}
-            </Typography>
-          </Stack>
+
 
           <Typography variant="h6" fontWeight={700} gutterBottom color='primary.main' sx = {{ fontSize:{ xs:'1Rem',md:'2.2Rem'}, lineHeight:"40px"}}>
             {noticia.title}
@@ -74,7 +69,7 @@ const HeroCard = ({ noticia }) => {
               color="primary"
             />
             <Typography variant="caption" color="text.secondary">
-              · {noticia.leituraMinutos} min read
+              · {noticia.leituraMinutos} min read - {new Date(noticia.date).toLocaleDateString('pt-BR')}
             </Typography>
           </Stack>
         </Grid>

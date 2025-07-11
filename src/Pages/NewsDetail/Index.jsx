@@ -46,11 +46,8 @@ const NewsDetail = () => {
           component="img"
           src={article.image}
           alt={article.title}
-          sx={{ width: '100%', height: {xs:'260px', md:'320px'}, mb: 1, borderRadius:3, objectFit:'cover' }}
+          sx={{ width: '100%', height: {xs:'260px', md:'550px'}, mb: 1, borderRadius:3, objectFit:'cover' }}
         />
-
-        {/* Autores + Resumo */}
-
 
         {/* Ícones e Meta */}
         <Box sx={{ display: 'flex', alignItems: {xs:'center',md:'center'}, justifyContent: {xs:'space-between',md:'start'},gap: 2, mb: 2 }}>
@@ -86,7 +83,7 @@ const NewsDetail = () => {
         <NewsImageGrid images = {article.images}/>     
 
         
-        <Box sx={{ mb: 2 }}>
+        {/* <Box sx={{ mb: 2 }}>
           <Typography variant="caption" color="text.secondary">
             Por {article.autores.map((autor, idx) => (
               <span key={idx}>
@@ -96,7 +93,7 @@ const NewsDetail = () => {
               </span>
             ))}
           </Typography>
-        </Box>
+        </Box> */}
         <News label = {'Veja tambêm'}/>   
 
       </Box>

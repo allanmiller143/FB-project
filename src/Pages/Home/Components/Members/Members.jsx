@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import Slider from 'react-slick'
-import { membrosDestaque } from './Data'
+import {members} from '../../../../Pages/Team/Components/Data'
 import { motion } from 'framer-motion'
 
 const sliderSettings = {
@@ -75,7 +75,7 @@ const Members = () => {
       {/* Slider de membros */}
       <Box sx={{ flex: 1, minWidth: 0 }}>
         <Slider {...sliderSettings}>
-          {membrosDestaque.map((membro, i) => (
+          {members.map((membro, i) => (
             <Box
               key={i}
               sx={{
@@ -87,8 +87,8 @@ const Members = () => {
             >
               <Box
                 component="img"
-                src={membro.foto}
-                alt={membro.nome}
+                src={membro.image}
+                alt={membro.name}
                 sx={{
                   width: 220,
                   height: 220,
@@ -99,10 +99,10 @@ const Members = () => {
                 }}
               />
               <Typography sx={{ mt: 1, fontWeight: 600, fontSize: '0.95rem' }}>
-                {membro.nome}
+                {membro.name}
               </Typography>
               <Typography sx={{ fontSize: '0.85rem', color: 'text.secondary' }}>
-                {membro.funcao}
+                {membro.role}
               </Typography>
             </Box>
           ))}

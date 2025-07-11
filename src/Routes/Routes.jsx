@@ -7,6 +7,7 @@ import DetalheProjeto from '../Pages/ProjectDetail/Article/Index.jsx'
 import Team from '../Pages/Team/Index.jsx'
 import News from '../Pages/Notices/Index.jsx'
 import NewsDetail from '../Pages/NewsDetail/Index.jsx'
+import EventCalendar from '../Pages/Events/Index.jsx'
 // import Projetos from '../pages/Projetos'
 // import Contato from '../pages/Contato'
 
@@ -20,6 +21,9 @@ export default function AppRoutes() {
       <Route path="/noticias" element={<News/>} />
       <Route path="/projeto/:id" element={<DetalheProjeto/>}/>
       <Route path="/noticia/:id" element={<NewsDetail/>}/>
+      <Route path="/eventos" element={<EventCalendar/>}/>
+
+      
 
     </Routes>
   )
