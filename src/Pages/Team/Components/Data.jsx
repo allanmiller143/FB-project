@@ -6,7 +6,7 @@ import Teammate5 from '../../../assets/Members/Renata.jpg';
 import Teammate6 from '../../../assets/Members/Mateus_Amorim.png';
 import Teammate7 from '../../../assets/Members/Durval.jpg';
 import Teammate8 from '../../../assets/Members/Rui.jpg'
-import Teammate9 from '../../../assets/Members/paulo.jpg'
+import Teammate9 from '../../../assets/Members/Paulo.jpg'
 import Teammate10 from '../../../assets/Members/Hugo.jpg'
 import Teammate11 from '../../../assets/Members/Lucas.jpg'
 import Teammate12 from '../../../assets/Members/Julio.jpg'
