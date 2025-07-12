@@ -5,6 +5,7 @@ import { projetosData } from '../../Pages/Home/Components/Projects/Data'
 import Projects from './Components/ProjectsList'
 import DestaqueCard from './Components/DestaqueCard'
 import PageContainer from '../../Utils/Components/Containers/PageContainer'
+import InfoBox from '../../Utils/Components/Utils/InfoBox'
 
 const Projetos = () => {
   const [busca, setBusca] = useState('')
@@ -42,6 +43,7 @@ const Projetos = () => {
 
   return (
     <PageContainer title="Projetos" description="Esta página é responsável por exibir todos os projetos dos alunos dos professor Fernando Burarque ">
+      <InfoBox/>
       <Box sx={{ px: { xs: 2, md: 4 }, pt: {xs:4, md:12}, maxWidth: 'lg', mx: 'auto' }}>
         <Box sx = {{display:'flex', justifyContent:'space-between'}}>
           <Box>
@@ -52,7 +54,7 @@ const Projetos = () => {
                   color: 'primary.main',
                   }}
               >
-              Trabalhos e Projetos
+              Publicações
             </Typography>
 
             {/* Descrição */}
@@ -67,7 +69,7 @@ const Projetos = () => {
                   mb: {xs: 2, md: 4},
                   }}
             >
-              Explore os projetos desenvolvidos pelo nosso grupo. Busque por título, área de atuação ou palavras-chave relacionadas.
+              Explore as publicações feitas pelo nosso grupo. Busque por título, área de atuação ou palavras-chave relacionadas.
             </Typography>
 
             {/* Barra de busca e ordenação */}

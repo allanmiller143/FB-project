@@ -15,11 +15,11 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/projetos" element={<Projetos/>} />
+      <Route path="/publicações" element={<Projetos/>} />
       <Route path="/contato" element={<Contato />} />
       <Route path="/time" element={<Team />} />
       <Route path="/noticias" element={<News/>} />
-      <Route path="/projeto/:id" element={<DetalheProjeto/>}/>
+      <Route path="/publicações/:id" element={<DetalheProjeto/>}/>
       <Route path="/noticia/:id" element={<NewsDetail/>}/>
       <Route path="/eventos" element={<EventCalendar/>}/>
 

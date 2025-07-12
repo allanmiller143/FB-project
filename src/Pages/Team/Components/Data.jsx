@@ -13,6 +13,21 @@ import Teammate12 from '../../../assets/Members/Julio.jpg'
 
 
 export const members = [
+
+    {
+    name: 'Fernando Buarque',
+    role: 'Doutor',
+    description: 'PhD em Inteligência Artificial pela University of London (2002), com Diploma do Imperial College London em Redes Neurais. Mestre em Ciência da Computação pela UFPE (1998). Bacharel em Ciência da Computação pela UNICAP (1990).',
+    image: Teammate4,
+    socials: {
+      x: '',
+      instagram: '',
+      linkedin: '',
+      lattes: 'http://lattes.cnpq.br/5175924818753829',
+      git:''
+    },
+    foreigner: false
+  },
   {
     name: 'Allan Miller',
     role: 'Mestrando',
@@ -67,20 +82,6 @@ export const members = [
       linkedin: 'https://www.linkedin.com/in/renata-gois-683bb4174/',
       git: '',
       lattes: 'http://lattes.cnpq.br/8208343526518564',
-    },
-    foreigner: false
-  },
-  {
-    name: 'Fernando Buarque',
-    role: 'Doutor',
-    description: 'PhD em Inteligência Artificial pela University of London (2002), com Diploma do Imperial College London em Redes Neurais. Mestre em Ciência da Computação pela UFPE (1998). Bacharel em Ciência da Computação pela UNICAP (1990).',
-    image: Teammate4,
-    socials: {
-      x: '',
-      instagram: '',
-      linkedin: '',
-      lattes: '',
-      git:''
     },
     foreigner: false
   },

@@ -159,7 +159,7 @@ const Projects = () => {
                   variant="outlined"
                   size="small"
                   sx={{ textTransform: 'none', fontWeight: 600, padding: '6px 12px' }}
-                  onClick={() => navigate(`/projeto/${projeto.id}`)}
+                  onClick={() => navigate(`/publicações/${projeto.id}`)}
                 >
                   Ver detalhes
                 </Button>

@@ -5,10 +5,23 @@ import {members} from './Data'
 import { FaXTwitter, FaInstagram, FaLinkedin, FaGithub, FaUserGraduate, FaGlobe } from 'react-icons/fa6' // Lattes → FaUserGraduate como sugestão
 
 const TeamMemberCard = () => {
+
+const getRolePriority = (role = '') => {
+  const r = role.toLowerCase();
+  if (/doutor/.test(r)) return 1;
+  if (/doutorand[ao]/.test(r)) return 2;
+  if (/mestrand[ao]/.test(r)) return 3;
+  return 4;
+};
+
+const sortedMembers = [...members].sort((a, b) => {
+  return getRolePriority(a.role) - getRolePriority(b.role);
+});
+
   return (
-    <Box sx={{ color: 'primary.main' }}>
+    <Box sx={{ color: 'primary.main', mt:10 }}>
       <Grid container spacing={4} justifyContent="start">
-        {members.map((member, i) => (
+        {sortedMembers.map((member, i) => (
           <Grid key={i} item size={{xs:12,md:6}}>
             <Box
               sx={{

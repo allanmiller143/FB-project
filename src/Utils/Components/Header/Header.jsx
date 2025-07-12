@@ -1,19 +1,6 @@
 // src/components/Header.jsx
 import React, { useState } from 'react'
-import {
-  Box,
-  Container,
-  Typography,
-  Button,
-  IconButton,
-  Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Divider
-} from '@mui/material'
+import {Box,Container,Typography,Button,IconButton,Drawer,List,ListItem,ListItemButton,ListItemIcon,ListItemText,Divider} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import HomeIcon from '@mui/icons-material/Home'
 import WorkspacesIcon from '@mui/icons-material/Workspaces'
@@ -27,7 +14,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 
 const navItems = [
   { label: 'Início', path: '/', icon: <HomeIcon /> },
-  { label: 'Projetos', path: '/projetos', icon: <WorkspacesIcon /> },
+  { label: 'Publicações', path: '/publicações', icon: <WorkspacesIcon /> },
   { label: 'Equipe', path: '/time', icon: <GroupIcon /> },
   { label: 'Notícias', path: '/noticias', icon: <ArticleIcon /> },
   { label: 'Contato', path: '/contato', icon: <ContactMailIcon /> }

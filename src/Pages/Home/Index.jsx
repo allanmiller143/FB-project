@@ -7,20 +7,21 @@ import ContactCard from './Components/Contact/ContactCard'
 import News from './Components/News/News'
 import Projects from './Components/Projects/Projects'
 import ContactForm from '../Contact/Components/ContactForm'
+import ProgramLogos from '../../Utils/Components/Utils/Logos'
+import ProfessorCard from '../../Utils/Components/Utils/ProfessorCard'
 
 const Index = () => {
   return (
     <PageContainer title="Início | Grupo de Pesquisa - Prof. Fernando Buarque" description="Bem-vindo ao site do grupo de pesquisa liderado pelo Prof. Fernando Buarque. Veja nossos projetos, publicações e equipe.">
-        <HeroSection/>   
+        <HeroSection/>  
+        {/* <ProfessorCard/> */}
         <News/>
+        <ProgramLogos/>
         <Projects/>
         <ContactForm/>
         <Members/>
-        
         {/* <ContactCard/> */}
     
-        
-        
     </PageContainer>
   )
 }

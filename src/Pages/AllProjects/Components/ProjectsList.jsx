@@ -25,7 +25,7 @@ const Projects = ({projetosData}) => {
         fontWeight={600}
         sx={{ mb: 4, textAlign: 'left', borderBottom: '4px solid #0D3B66', pb: 1, color: 'primary.main' }}
       >
-        Projetos
+        Publicações
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -157,7 +157,7 @@ const Projects = ({projetosData}) => {
                   variant="outlined"
                   size="small"
                   sx={{ textTransform: 'none', fontWeight: 600, padding: '6px 12px' }}
-                  onClick={() => navigate(`/projeto/${projeto.id}`)}
+                  onClick={() => navigate(`/publicações/${projeto.id}`)}
                 >
                   Ver detalhes
                 </Button>
