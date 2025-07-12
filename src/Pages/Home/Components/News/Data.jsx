@@ -4,7 +4,7 @@ import AI3 from '../../../../assets/News/IA3.jpg';
 import AI4 from '../../../../assets/News/IA4.jpg';
 import AI5 from '../../../../assets/News/IA5.jpg';
 
-import New1 from '../../../../assets/News/New1/primeiraReuniao.png'
+import New1 from '../../../../assets/News/New1/PrimeiraReuniao.png'
 
 import New2 from '../../../../assets/News/New2/RegiaoMilitar.png'
 
@@ -15,7 +15,6 @@ import New4 from '../../../../assets/News/New4/Comissao.png'
 export const newsData = [
   {
     id: '1',
-    slug: '',
     title: 'Participação da POLI/UPE na Conferência Ibérica de Sistemas de Informação',
     resumo: 'Representantes da Escola Politécnica da UPE marcaram presença na Conferência Ibérica de Sistemas de Informação, integrando uma comissão composta por docentes e pesquisadores do grupo CIRG.',
     content: `Durante a Conferência Ibérica de Sistemas de Informação (CISI 2025), uma comissão da Escola Politécnica da Universidade de Pernambuco (POLI/UPE) esteve presente representando a instituição e o Grupo de Pesquisa em Inteligência Computacional (CIRG).
@@ -36,7 +35,6 @@ A comissão foi composta por Paulo Varjal, Prof. Fernando Buarque, Gabriela, Pro
   },
   {
     id: '2',
-    slug: '',
     title: 'Apresentação de artigo na Conferência Ibérica de Sistemas de Informação 2025',
     resumo: 'Entre os dias 16 e 19 de junho de 2025, o mestrando Paulo Varjal apresentou um artigo na Conferência Ibérica de Sistemas de Informação, resultado de sua pesquisa orientada pelo professor Fernando Buarque.',
     content: `Entre os dias 16 e 19 de junho de 2025, foi realizada a Conferência Ibérica de Sistemas de Informação (CISI 2025), um evento internacional voltado à discussão de avanços e aplicações em Sistemas de Informação.
@@ -60,7 +58,6 @@ A apresentação representa um marco importante na trajetória de pesquisa do al
   },
   {
     id: '3',
-    slug: '',
     title: 'Professor Fernando Buarque palestra sobre Inteligência Artificial no Serviço Público na 7ª Região Militar',
     resumo: 'No dia 07 de maio de 2025, o professor Fernando Buarque participou do “Seminário de Inteligência Artificial para Administração Pública” na 7ª Região Militar, abordando as aplicações da IA no setor público.',
     content: `No dia 07 de maio de 2025, o professor Fernando Buarque de Lima Neto, líder do Grupo de Pesquisa em Inteligência Computacional (CIRG/UPE), foi palestrante no “Seminário de Inteligência Artificial para Administração Pública”, realizado na sede da 7ª Região Militar.
@@ -82,7 +79,6 @@ Com o tema “Aplicação da Inteligência Artificial no Serviço Público”, o
   },
   {
     id: '4',
-    slug: '',
     title: 'Primeira reunião do grupo de pesquisa CIRG/UPE do semestre 2025.1',
     resumo: 'Na primeira reunião do grupo de pesquisa  CIRG/UPE, foi realizada a apresentação de veteranos e novos membros ao grupo.',
     content: `A primeira reunião do grupo de pesquisa CIRG/UPE no semestre 2025.1 marcou o início oficial das atividades do ano, promovendo um ambiente de boas-vindas tanto para veteranos quanto para os novos integrantes. Durante o encontro, o professor Fernando Buarque conduziu uma introdução inspiradora, destacando o papel da ciência como ferramenta de transformação e impacto social. Ele apresentou os principais objetivos do grupo CIRG, reforçou a importância da pesquisa colaborativa e detalhou como funcionam as dinâmicas das reuniões: ciclos de discussão técnica, apresentações de projetos e contribuições interdisciplinares.
@@ -107,3 +103,4 @@ Com o tema “Aplicação da Inteligência Artificial no Serviço Público”, o
     images: []
   }
 ];
+

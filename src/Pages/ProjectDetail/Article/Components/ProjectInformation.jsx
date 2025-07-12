@@ -7,7 +7,7 @@ import ChipList from '../../../../Utils/Components/Utils/ChipList'
 
 const ProjectInformation = ({ projeto }) => {
   return (
-    <Box  sx={{ maxWidth: 'lg', mx: 'auto', mx: 'auto', py: 2}}>
+    <Box  sx={{ maxWidth: 'lg', mx: 'auto', py: 2}}>
     <Box sx={{ display:'flex', justifyContent:'space-between', flexDirection:{xs:'column', md: 'row'}, alignItems:'start', width:'100%', gap:3}}>
       <Stack spacing={2} >
         <Typography variant="h6" fontWeight={600} gutterBottom>
