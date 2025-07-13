@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 import CIRG from '../../../assets/Logos/CIRG.svg'
 import UPE from '../../../assets/Logos/upe-logo.png'
 import PPGEC from '../../../assets/Logos/logo-v3.png'
+import POLI from '../../../assets/Logos/Poliupe.avif'
+
 
 const logos = [
   {
@@ -25,6 +27,12 @@ const logos = [
     src: UPE,
     alt: 'Universidade de Pernambuco',
     link: 'https://www.upe.br/'
+  },
+  {
+    name: 'Poli',
+    src: POLI,
+    alt: 'Escola politêcnica de Pernambuco',
+    link: 'https://poli.br/'
   },
 ]
 
@@ -56,7 +64,7 @@ const ProgramLogos = () => {
     >
       <Grid container spacing={4} justifyContent="space-between" alignItems="center" sx ={{width:"100%"}}>
         {logos.map((logo, index) => (
-          <Grid item size={{xs:4, md:4}} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid item size={{xs:4, md:3}} key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
             <MotionBox
               component="a"
               href={logo.link}

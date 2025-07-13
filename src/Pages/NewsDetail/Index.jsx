@@ -94,7 +94,7 @@ const NewsDetail = () => {
             ))}
           </Typography>
         </Box> */}
-        <News label = {'Veja tambêm'}/>   
+        <News label = {'Veja também'}/>   
 
       </Box>
     </PageContainer>

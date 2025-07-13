@@ -14,7 +14,8 @@ import { useNavigate, useLocation } from 'react-router-dom'
 
 const navItems = [
   { label: 'Início', path: '/', icon: <HomeIcon /> },
-  { label: 'Publicações', path: '/publicações', icon: <WorkspacesIcon /> },
+  { label: 'Publicações', path: '/publicacoes', icon: <WorkspacesIcon /> },
+  { label: 'Projetos', path: '/projetos', icon: <LogoutIcon /> },
   { label: 'Equipe', path: '/time', icon: <GroupIcon /> },
   { label: 'Notícias', path: '/noticias', icon: <ArticleIcon /> },
   { label: 'Contato', path: '/contato', icon: <ContactMailIcon /> }
@@ -159,7 +160,7 @@ const Header = () => {
           {/* RODAPÉ DO MENU (opcional) */}
           <Box sx={{ mt: 3 }}>
             <Typography variant="caption" color="text.secondary">
-              © {new Date().getFullYear()} Prof. F. Buarque
+              © {new Date().getFullYear()} CIRG@UPE
             </Typography>
           </Box>
         </Drawer>

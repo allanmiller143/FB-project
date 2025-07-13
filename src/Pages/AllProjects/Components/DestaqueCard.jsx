@@ -75,7 +75,7 @@ const DestaqueCard = ({ projeto }) => {
               fontWeight: 600,
               borderRadius: 2,
             }}
-            onClick={() => navigate(`/publicações/${projeto.id}`)}
+            onClick={() => navigate(`/publicacoes/${projeto.id}`)}
           >
             Ver detalhes
           </Button>

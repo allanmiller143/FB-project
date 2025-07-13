@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Typography, Button, Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import Img from '../../../../assets/download.png'
+import Img from '../../../assets/Projects/HeroSectionImg.svg'
 
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
@@ -13,12 +13,10 @@ const HeroSection = () => {
   return (
     <Box
       sx={{
-        py: { xs: 4, md: 10 },
-        background: 'linear-gradient(to right, #f4f6f8, #ffffff)',
-        borderBottom: '1px solid #e0e0e0',
+        pt: { xs: 4, md: 5 },
+        pb: { xs: 4, md: 10 },
       }}
     >
-      <Container maxWidth="lg">
         <Box
           sx={{
             display: 'flex',
@@ -44,7 +42,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Grupo de Pesquisa em Inteligência Computacional (CIRG@UPE)
+              Projetos com participação de membros do CIRG
             </MotionTypography>
 
             <Typography
@@ -59,31 +57,9 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.
-            </Typography>
+CIRG – Computational Intelligence Research Group, vinculado à Universidade de Pernambuco e ativo há mais de 20 anos na formação de pesquisadores e desenvolvimento de soluções baseadas em IA.            </Typography>
 
-            <Button
-              variant="outlined"
-              sx={{textTransform: 'none', fontWeight: 600, borderRadius: 2, px: 2,display:'flex', margin: {xs: '0 auto',md:'0'}}}
-              size="small"
-              color="primary"
-              onClick={() => navigate('/publicacoes')}
-            >
-              Conheça nossas publicações
-            </Button>
 
-            <Typography
-              variant="caption"
-              sx={{
-                mt: 2,
-                display: 'block',
-                color: 'text.secondary',
-                fontSize: { xs: '0.75rem', md: '0.85rem' },
-                textAlign:{xs:'center',md:'left'},
-              }}
-            >
-              Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco
-            </Typography>
           </MotionBox>
 
           {/* Imagem */}
@@ -103,7 +79,6 @@ const HeroSection = () => {
             }}
           />
         </Box>
-      </Container>
     </Box>
   )
 }
