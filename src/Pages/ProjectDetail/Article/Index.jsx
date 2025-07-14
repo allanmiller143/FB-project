@@ -24,7 +24,6 @@ const ProjetoDetalhado = () => {
 
   return (
     <PageContainer title={`${projeto.titulo}`} description="Detalhes do projeto">
-      <InfoBox/>
       <Box sx={{ maxWidth: 'lg', mx: 'auto', py: {xs:0, mb:6}, px: 2 }}>
         <HeroSection projeto={projeto}/>  
         <Abstract projeto={projeto}/>

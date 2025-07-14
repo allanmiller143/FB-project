@@ -79,7 +79,7 @@ const Projects = () => {
                   mb: 0.5,
                 }}
               >
-                <Box>
+                <Box  >
                     <Typography
                     variant="h6"
                     fontWeight={600}
@@ -91,7 +91,8 @@ const Projects = () => {
                         textOverflow: 'ellipsis',
                         lineHeight: 1.3,
                         fontSize: { xs: '0.8rem', md: '1rem' },
-                        maxWidth: '70%',
+                        maxWidth: '100%',
+                        mb:{xs:1, md:0}
                     }}
                     >
                     {projeto.titulo}
@@ -114,7 +115,7 @@ const Projects = () => {
 
                 </Box>
 
-                <Box sx = {{display: 'flex', gap: 1, flexDirection: {xs:'column', md: 'row'}}}>
+                <Box sx = {{display: { xs:'none',md: 'flex'}, gap: 1, flexDirection: {xs:'column', md: 'row'}}}>
                     <Chip
                     label={projeto.area}
                     size="small"
@@ -128,27 +129,27 @@ const Projects = () => {
                 </Box>
               </Box>
 
-              {projeto.text && (
+              {projeto.abstract && (
                 <Typography
                   variant="body2"
                   sx={{
                     color: 'text.secondary',
                     display: '-webkit-box',
-                    WebkitLineClamp: 4,
+                    WebkitLineClamp: 3,
                     WebkitBoxOrient: 'vertical',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',
-                    maxWidth: '90%',
+                    maxWidth: '100%',
                     mt: 2,
                     mb : {xs: 2, md: 0},
                     fontSize: { xs: '0.70rem', md: '0.85rem' },
                   }}
                 >
-                  {projeto.text}
+                  {projeto.abstract}
                 </Typography>
               )}
 
-              <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems:'end' }}>
+              <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems:'end', mt:1 }}>
                 <Typography
                   variant="caption"
                   sx={{ display: 'block', color: 'primary.main' }}
@@ -158,7 +159,7 @@ const Projects = () => {
                 <Button
                   variant="outlined"
                   size="small"
-                  sx={{ textTransform: 'none', fontWeight: 600, padding: '6px 12px' }}
+                  sx={{ textTransform: 'none', fontWeight: 600, padding: '2px 12px' }}
                   onClick={() => navigate(`/publicacoes/${projeto.id}`)}
                 >
                   Ver detalhes

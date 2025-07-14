@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Toaster } from 'sonner';
 import Footer from './Utils/Components/Footer/Footer.jsx';
 import AllProjectsContextProvider from './Pages/AllProjects/Context/AllProjectsContextProvider.jsx';
+import InfoBox from './Utils/Components/Utils/InfoBox.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Toaster richColors position="top-right" />
       <AllProjectsContextProvider>
         <Header />
+        <InfoBox/>
         <Routes />
         <Footer/>
       </AllProjectsContextProvider>

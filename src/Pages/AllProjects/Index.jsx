@@ -43,7 +43,6 @@ const Projetos = () => {
 
   return (
     <PageContainer title="Projetos" description="Esta página é responsável por exibir todos os projetos dos alunos dos professor Fernando Burarque ">
-      <InfoBox/>
       <Box sx={{ px: { xs: 2, md: 4 }, pt: {xs:4, md:12}, maxWidth: 'lg', mx: 'auto' }}>
         <Box sx = {{display:'flex', justifyContent:'space-between'}}>
           <Box>

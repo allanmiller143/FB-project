@@ -15,15 +15,6 @@ const ProjectInformation = ({ projeto }) => {
         </Typography>
         <Box>
           <Typography variant="subtitle1" fontWeight={600}>
-            Orientador
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {projeto.orientador}
-          </Typography>
-        </Box>
-
-        <Box>
-          <Typography variant="subtitle1" fontWeight={600}>
             Autores
           </Typography>
           <Authors projeto= {projeto}/>          
@@ -37,7 +28,7 @@ const ProjectInformation = ({ projeto }) => {
         <Divider sx={{ my: 2 }} />
         <Box>
             <Typography variant="subtitle1" fontWeight={600} gutterBottom>
-            Publicações Relacionadas
+            Publicações 
             </Typography>
             <Stack spacing={2}>
             {projeto.publicacoes.map((pub, i) => (
