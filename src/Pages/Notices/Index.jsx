@@ -6,10 +6,15 @@ import {newsData} from '../../Pages/Home/Components/News/Data'
 import HeroCard from './Components/HeroCard';
 import NewsList from './Components/NewsList';
 import TagsSelector from './Components/TagsSelector';
+import { newsDataPT } from '../../locales/Data/News/NewsDataPT'
+import { newsDataEN } from '../../locales/Data/News/NewsDataEn'
+import { useTranslation } from 'react-i18next';
 
 
 
 const News = () => {
+  const { i18n } = useTranslation()
+  const newsData = i18n.language === 'pt' ? newsDataPT : newsDataEN
 
   return (
     <PageContainer

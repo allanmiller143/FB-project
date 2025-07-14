@@ -1,11 +1,17 @@
 // src/components/TeamDiamondGrid.jsx
 import React from 'react';
 import { Box, Tooltip, Typography } from '@mui/material';
-import { members } from './Data';
+import { TeamDataPt} from '../../../locales/Data/Team/TeamDataPt'
+import { TeamDataEn } from '../../../locales/Data/Team/TeamDataEn'
+import { useTranslation } from 'react-i18next';
+
 
 const diamondSize = 100;
 
 const TeamDiamondGrid = () => {
+  const { i18n } = useTranslation()
+  const members = i18n.language === 'pt' ? TeamDataPt : TeamDataEn
+    
   if (!members || members.length === 0) return null;
 
   // Divide em linhas com no máximo 4 por linha

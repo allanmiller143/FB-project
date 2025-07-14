@@ -1,18 +1,22 @@
 // src/components/NewsList.jsx
 import React, { useState, useEffect } from 'react';
-import {
-  Box, Typography, Card, CardMedia, CardContent,
-  Chip, Button, Grid
-} from '@mui/material';
+import { Box, Typography, Card, CardMedia, CardContent,Chip, Button, Grid} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { newsData } from '../../Home/Components/News/Data';
 import SubmissionCallsBanner from './SubmissionCallsBanner';
+import { useTranslation } from 'react-i18next';
+import { newsDataPT } from '../../../locales/Data/News/NewsDataPT'
+import { newsDataEN } from '../../../locales/Data/News/NewsDataEn'
 
 const NewsList = () => {
   const navigate = useNavigate();
   const [selectedTag, setSelectedTag] = useState('Todos');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
+  const { i18n } = useTranslation()
+  const newsData = i18n.language === 'pt' ? newsDataPT : newsDataEN
+  
+  const { t } = useTranslation('news');
 
   // Extrair todas as tags únicas
   const tagSet = new Set();
@@ -50,7 +54,7 @@ const NewsList = () => {
               pb: 1,
             }}
           >
-            Últimas Notícias
+            {t('news.title')}
           </Typography>
 
           {/* Filtros de tags */}
@@ -136,11 +140,11 @@ const NewsList = () => {
                         mt: 'auto',
                       }}
                     >
-                      {new Date(item.date).toLocaleDateString('pt-BR', {
-                        day: '2-digit',
-                        month: 'long',
-                        year: 'numeric',
-                      })}
+                    {new Date(item.date).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
+                      day: '2-digit',
+                      month: 'long',
+                      year: 'numeric',
+                    })}
                     </Typography>
                   </CardContent>
                 </Card>

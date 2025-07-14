@@ -5,9 +5,12 @@ import TeamDiamondGrid from './TeamDiamondGrid';
 import { motion } from 'framer-motion'
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
+import { useTranslation } from 'react-i18next';
 
 
 const HeroSection = () => {
+  const { t } = useTranslation('team');
+    
   return (
     <MotionBox
         initial={{ opacity: 0, y: 80 }}
@@ -28,18 +31,18 @@ const HeroSection = () => {
                         textAlign:{xs:'center',md:'left'},
                     }}
                     >
-                        Nosso grupo de pesquisa
+                        {t('team_hero.title')}
 
                     </MotionTypography>
                     
                     {/* Subtitulo */}
                     <Typography variant='body1' sx={{color: 'text.secondary',mt:{ xs:2.5,md:1.5}, mb:4, fontSize:'1.5rem', textAlign:{xs:'center', md:'left'}}}>
-                        Conheça o time completo
+                        {t('team_hero.subtitle')}
                     </Typography>
 
                     {/* Descrição */}
                     <Typography variant='body2' sx={{fontSize:'0.95rem', color:'text.secondary', maxWidth: {xs:'100%', md:'90%'}, textAlign:{xs:'center', md:'left'}}}>
-                        Pesquisa aplicada e interdisciplinar com foco em Inteligência Artificial, Sistemas Complexos e tecnologias emergentes, voltada ao desenvolvimento de soluções que geram impacto real na sociedade. Atuamos com ciência orientada por propósito, colaboração contínua e visão estratégica de futuro.           
+                        {t('team_hero.caption')}           
                     </Typography>
                 </Grid>
                 <Grid item size={{xs:12, md:6}}>

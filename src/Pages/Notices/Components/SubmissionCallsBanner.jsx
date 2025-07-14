@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import CampaignIcon from '@mui/icons-material/Campaign';
+import { useTranslation } from 'react-i18next';
 
 const SubmissionCallsBanner = () => {
   const calls = [
@@ -17,6 +18,8 @@ const SubmissionCallsBanner = () => {
       deadline: 'Deadline: 15/10/2025',
     },
   ];
+  const { t } = useTranslation('news');
+  
 
   return (
     <Box
@@ -31,7 +34,7 @@ const SubmissionCallsBanner = () => {
       <Stack direction="row" alignItems="center" spacing={1} mb={2}>
         <CampaignIcon fontSize="small" color="primary" />
         <Typography variant="subtitle1" fontWeight={700} color="primary">
-          Chamadas Abertas
+          {t('news_alert.title')}
         </Typography>
       </Stack>
 

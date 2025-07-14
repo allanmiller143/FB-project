@@ -2,15 +2,17 @@
 import React, { useState } from 'react'
 import { Box, Typography, Divider, IconButton, Collapse, Stack } from '@mui/material'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import { useTranslation } from 'react-i18next';
 
 const Content = ({ noticia }) => {
   const [expanded, setExpanded] = useState(true)
+  const { t } = useTranslation('news_detail');
 
   return (
     <Box sx={{ maxWidth: 'lg', mx: 'auto', py: 3 }}>
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={2}>
         <Typography variant="h5" fontWeight={600} color='primary.main'>
-          Notícia
+           {t('news_detail.title')}
         </Typography>
         <IconButton onClick={() => setExpanded((prev) => !prev)} size="small">
           <ArrowDownwardIcon

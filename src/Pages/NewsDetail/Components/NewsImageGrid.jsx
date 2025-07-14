@@ -9,9 +9,11 @@ import {
 } from '@mui/material'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import Masonry from '@mui/lab/Masonry'
+import { useTranslation } from 'react-i18next';
 
 const NewsImageGallery = ({ images }) => {
   const [expanded, setExpanded] = useState(true)
+  const { t } = useTranslation('news_detail');
 
   if (!images || images.length === 0) return null
 
@@ -26,7 +28,7 @@ const NewsImageGallery = ({ images }) => {
     <Box sx={{ maxWidth: 'lg', mx: 'auto', py: 3 }}>
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={2}>
         <Typography variant="h5" fontWeight={600} color="primary.main">
-        Imagens
+        {t('news_detail.images')}
         </Typography>
         <IconButton onClick={() => setExpanded(prev => !prev)} size="small">
           <ArrowDownwardIcon

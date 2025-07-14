@@ -12,6 +12,12 @@ import publicationsPT from './pt/publications.json'
 import publicationsEN from './en/publications.json'
 import contactPT from './pt/Contact.json'
 import contactEN from './en/Contact.json'
+import newsDetailPT from './pt/news_detail.json'
+import newsDetailEN from './en/news_detail.json'
+import newsPT from './pt/news.json'
+import newsEN from './en/news.json'
+import teamPT from './pt/team.json'
+import teamEN from './en/team.json'
 
 i18n
   .use(LanguageDetector)
@@ -23,7 +29,10 @@ i18n
         header: headerPT,
         publication_detail: publicationDetailPT,
         publications:publicationsPT,
-        contact:contactPT
+        contact:contactPT,
+        news_detail:newsDetailPT,
+        news: newsPT,
+        team:teamPT
         // ...
       },
       en: {
@@ -31,13 +40,16 @@ i18n
         header: headerEN,
         publication_detail: publicationDetailEN,
         publications:publicationsEN,
-        contact:contactEN
+        contact:contactEN,
+        news_detail: newsDetailEN,
+        news: newsEN,
+        team:teamEN
 
         // ...
       },
     },
     fallbackLng: 'en',
-    ns: ['home', 'header','publication_detail','publications','contact'], // nomes dos arquivos
+    ns: ['home', 'header','publication_detail','publications','contact','news_detail', 'news', 'team'], // nomes dos arquivos
     defaultNS: 'home',
     interpolation: {
       escapeValue: false,

@@ -2,12 +2,12 @@ import React from 'react';
 import { Box, Typography, Avatar, Stack, Chip, Grid } from '@mui/material';
 import { Card } from '@mui/material';
 import { motion } from 'framer-motion'
-
-
-
+import { useTranslation } from 'react-i18next';
 const MotionCard = motion(Box)
 
 const HeroCard = ({ noticia }) => {
+  const { t } = useTranslation('news');
+  
   return ( 
     <MotionCard
       initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ const HeroCard = ({ noticia }) => {
           </Typography>
 
           <Typography variant='h7' color='primary.main'>
-            Conteúdo
+            {t('news.content')}
           </Typography>
 
           <Typography variant="body2"

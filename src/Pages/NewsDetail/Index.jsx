@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Box, Typography, Chip, Avatar, Divider, Button, IconButton, Stack
-} from '@mui/material'
+import {Box, Typography, Chip, Avatar, Divider, Button, IconButton, Stack} from '@mui/material'
 import { useParams } from 'react-router-dom'
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'
 import VisibilityIcon from '@mui/icons-material/Visibility'
@@ -11,11 +9,19 @@ import PageContainer from '../../Utils/Components/Containers/PageContainer'
 import Content from './Components/Content'
 import NewsImageGrid from './Components/NewsImageGrid.jsx'
 import News from '../Home/Components/News/News.jsx'
+import { newsDataPT } from '../../locales/Data/News/NewsDataPT'
+import { newsDataEN } from '../../locales/Data/News/NewsDataEn'
+
+import { useTranslation } from 'react-i18next';
 
 const NewsDetail = () => {
   const { id } = useParams()
-  const article = newsData.find(n => n.id === id)
 
+  const { t } = useTranslation('news');
+  const { i18n } = useTranslation()
+  const newsData = i18n.language === 'pt' ? newsDataPT : newsDataEN
+  
+  const article = newsData.find(n => n.id === id)
   if (!article) return <Typography>Notícia não encontrada</Typography>
 
   const handleShare = () => {
@@ -53,13 +59,13 @@ const NewsDetail = () => {
         <Box sx={{ display: 'flex', alignItems: {xs:'center',md:'center'}, justifyContent: {xs:'space-between',md:'start'},gap: 2, mb: 2 }}>
           <Box sx= {{display:{ xs :'flex'}, gap:1}}>
             <Typography variant="caption" color="text.secondary">
-              {new Date(article.date).toLocaleDateString('pt-BR', {
-                day: '2-digit',
-                month: 'long',
-                year: 'numeric'
-            })}
+                {new Date(article.date).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
+                  day: '2-digit',
+                  month: 'long',
+                  year: 'numeric',
+                })} 
           </Typography>
-          <Typography variant="caption" color="text.secondary" sx={{display:{xs:'none', md:'block'}}}>• {article.leituraMinutos} min leitura</Typography>
+          <Typography variant="caption" color="text.secondary" sx={{display:{xs:'none', md:'block'}}}>• {article.leituraMinutos} min</Typography>
           </Box>
 
           <Box sx= {{display:{ xs :'flex'}, gap:1}}>
@@ -81,19 +87,6 @@ const NewsDetail = () => {
 
         <Content noticia={article}/>
         <NewsImageGrid images = {article.images}/>     
-
-        
-        {/* <Box sx={{ mb: 2 }}>
-          <Typography variant="caption" color="text.secondary">
-            Por {article.autores.map((autor, idx) => (
-              <span key={idx}>
-                <a href={autor.lattes} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#0D3B66' }}>
-                  {autor.nome}
-                </a>{idx < article.autores.length - 1 && ', '}
-              </span>
-            ))}
-          </Typography>
-        </Box> */}
         <News label = {'Veja também'}/>   
 
       </Box>
