@@ -73,23 +73,7 @@ const Header = () => {
         >
           CIRG Research group
         </Typography>
-        <Button
-          onClick={toggleLanguage}
-          sx={{
-            textTransform: 'none',
-            fontWeight: 500,
-            fontSize: '0.9rem',
-            minWidth: 40,
-            px: 1.5,
-            color: 'text.secondary',
-            '&:hover': {
-              color: 'primary.main',
-            },
-            display: { xs: 'none', md: 'inline-flex' }, // apenas no desktop
-          }}
-        >
-          {i18n.language === 'pt' ? 'EN' : 'PT'}
-        </Button>
+
 
         
 
@@ -116,6 +100,24 @@ const Header = () => {
             </Button>
           ))}
         </Box>
+
+                <Button
+          onClick={toggleLanguage}
+          sx={{
+            textTransform: 'none',
+            fontWeight: 500,
+            fontSize: '0.9rem',
+            minWidth: 40,
+            px: 1.5,
+            color: 'text.secondary',
+            '&:hover': {
+              color: 'primary.main',
+            },
+            display: { xs: 'none', md: 'inline-flex' }, // apenas no desktop
+          }}
+        >
+          {i18n.language === 'pt' ? 'EN' : 'PT'}
+        </Button>
 
         {/* BOTÃO MENU MOBILE */}
         <IconButton
