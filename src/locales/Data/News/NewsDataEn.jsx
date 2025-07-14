@@ -2,6 +2,8 @@ import New1 from '../../../assets/News/New1/PrimeiraReuniao.png'
 import New2 from '../../../assets/News/New2/RegiaoMilitar.png'
 import New3 from '../../../assets/News/New3/PauloVarjalProject.png'
 import New4 from '../../../assets/News/New4/Comissao.png'
+import New5 from '../../../assets/News/New5/ApJulio.jpg'
+import New6 from '../../../assets/News/New6/New6.png'
 
 export const newsDataEN = [
   {
@@ -66,5 +68,36 @@ The image shows some members of the CIRG/UPE Research Group, 2025: Márcio Cabra
     image: New1,
     destaque: true,
     images: []
-  }
+  },
+{
+  id: '5',
+  title: 'Paper presentation at the 2025 Iberian Conference on Information Systems',
+  resumo: 'From June 16 to 19, 2025, PhD student Julio Taverna presented a paper at the Iberian Conference on Information Systems. The paper is the result of his doctoral research supervised by Prof. Fernando Buarque.',
+  content: `The Iberian Conference on Information Systems (CISI 2025), held from June 16 to 19, 2025, featured a paper presentation by PhD student Julio Taverna. The research presented was developed as part of his PhD work, under the supervision of Prof. Fernando Buarque de Lima Neto, leader of the CIRG/UPE research group.
+
+This participation marks a significant milestone in Julio’s academic journey and reinforces POLI/UPE’s commitment to high-quality scientific production and the international reach of its researchers.
+
+Image caption: Presentation at the Iberian Conference on Information Systems, held from June 16 to 19, 2025. The paper presented was the result of Julio Taverna’s PhD research (on the right), supervised by Prof. Fernando Buarque (on the left).`,
+  leituraMinutos: 3,
+  category: 'Paper Presentation',
+  tags: ['Research', 'Presentation', 'PhD'],
+  date: '2025-06-18',
+  image: New5,
+  destaque: true,
+  images: []
+},{
+  id: '6',
+  title: 'Prof. Fernando Buarque speaks to TV Globo about Intelligence in Healthcare',
+  resumo: 'Prof. Dr. Fernando Buarque and PhD student Rui Nóbrega, from the Graduate Program in Computer Engineering at PPGEC – Poli/UPE, were featured in a special report by Globo Nordeste, discussing advances and applications of Artificial Intelligence in Healthcare.',
+  content: `Prof. Dr. Fernando Buarque and PhD student Rui Nóbrega, from the Graduate Program in Computer Engineering at PPGEC – Poli/UPE, were featured in a special report by Globo Nordeste, discussing the advances and applications of Artificial Intelligence in the healthcare field. The segment, aired last week, highlights how the research developed at Poli/UPE contributes to turning technology into a life-enhancing tool, promoting innovation and social impact. The full interview is available on the G1 news portal. Congratulations to the professor and the student for the recognition and the relevance of their academic and scientific work!`,
+  leituraMinutos: 3,
+  category: 'Media Appearance',
+  tags: ['AI', 'Healthcare', 'Interview'],
+  date: '2025-07-10', // ajuste conforme a data real de exibição
+  image: New6,
+  destaque: true,
+  images: []
+}
+
+
 ];

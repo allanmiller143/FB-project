@@ -71,7 +71,7 @@ const Header = () => {
             },
           }}
         >
-          Pesquisa | Prof. F. Buarque
+          CIRG Research group
         </Typography>
         <Button
           onClick={toggleLanguage}

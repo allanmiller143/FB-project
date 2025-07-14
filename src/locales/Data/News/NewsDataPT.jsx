@@ -3,6 +3,8 @@ import New1 from '../../../assets/News/New1/PrimeiraReuniao.png'
 import New2 from '../../../assets/News/New2/RegiaoMilitar.png'
 import New3 from '../../../assets/News/New3/PauloVarjalProject.png'
 import New4 from '../../../assets/News/New4/Comissao.png'
+import New5 from '../../../assets/News/New5/ApJulio.jpg'
+import New6 from '../../../assets/News/New6/New6.png'
 
 export const newsDataPT = [
   {
@@ -68,6 +70,35 @@ Com o tema “Aplicação da Inteligência Artificial no Serviço Público”, o
     image: New1,
     destaque: true,
     images: []
-  }
-];
+  },
+  {
+  id: '5',
+  title: 'Apresentação na Conferência Ibérica de Sistemas de Informação 2025',
+  resumo: 'Entre os dias 16 e 19 de junho de 2025, o doutorando Julio Taverna apresentou um artigo na Conferência Ibérica de Sistemas de Informação. O trabalho é resultado de sua pesquisa de doutorado orientada pelo Prof. Fernando Buarque.',
+  content: `A Conferência Ibérica de Sistemas de Informação (CISI 2025), realizada entre os dias 16 e 19 de junho de 2025, contou com a apresentação de um artigo científico pelo doutorando Julio Taverna. A pesquisa apresentada foi desenvolvida no âmbito de seu doutorado, sob orientação do Prof. Fernando Buarque de Lima Neto, líder do grupo de pesquisa CIRG/UPE.
 
+A participação no evento representa um marco importante na trajetória acadêmica de Julio e reforça o compromisso da POLI/UPE com a produção científica de qualidade e com a inserção internacional de seus pesquisadores.
+
+Legenda da imagem: Apresentação na Conferência Ibérica de Sistemas de Informação, ocorrida entre 16 a 19 de Junho de 2025. O artigo apresentado foi fruto da pesquisa de doutorado realizada pelo Julio Taverna (à direita) e orientada pelo Prof. Fernando Buarque (à esquerda).`,
+  leituraMinutos: 3,
+  category: 'Apresentação de artigo',
+  tags: ['Pesquisa', 'Apresentação', 'Doutorado'],
+  date: '2025-06-17',
+  image: New5,
+  destaque: true,
+  images: []
+},
+  {
+  id: '6',
+  title: 'Prof. Fernando Buarque fala à TV Globo sobre Inteligência na Saúde',
+  resumo: 'O Prof. Dr. Fernando Buarque e o discente Rui Nóbrega, do Doutorado em Engenharia da Computação do PPGEC – Poli/UPE, participaram de uma reportagem especial da Globo Nordeste, abordando os avanços e aplicações da Inteligência Artificial na área da Saúde.',
+  content: `O Prof. Dr. Fernando Buarque e o discente Rui Nóbrega, do Doutorado em Engenharia da Computação do PPGEC – Poli/UPE, participaram de uma reportagem especial da Globo Nordeste, abordando os avanços e aplicações da Inteligência Artificial na área da Saúde. A matéria, exibida na última semana, destaca como as pesquisas desenvolvidas na Poli/UPE contribuem para transformar a tecnologia em aliada da vida, promovendo inovação e impacto social. A entrevista completa está disponível no portal G1. Parabenizamos o professor e o discente pelo reconhecimento e pela relevância do trabalho realizado no âmbito acadêmico e científico!`,
+  leituraMinutos: 3,
+  category: '',
+  tags: [],
+  date: '',
+  image: New6,
+  destaque: true,
+  images: []
+}
+];
