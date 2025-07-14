@@ -2,26 +2,21 @@ import React from 'react'
 import {Box,Typography,Button,Container} from '@mui/material'
 import TextInput from '../../../Utils/Components/Inputs/TextInput'
 import {toast} from 'sonner' 
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
   const [email, setEmail] = React.useState('')
   const [name, setName] = React.useState('')
   const [message, setMessage] = React.useState('')
+  const { i18n,t } = useTranslation('contact');
 
   const handleSend = () =>{
-    if (!name.trim()) {
-      toast.error("Por favor, digite seu nome.");
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      const message =  t('contact_form.form_error')
+      toast.error(message);
       return;
     }    
-    if (!email.trim()) {
-      toast.error("Por favor, digite seu email.");
-      return;
-    }
-    if (!message.trim()) {
-      toast.error("Por favor, digite uma mensagem.");
-      return;
-    }
-    toast.success("Mensagem enviada com sucesso! (mas ainda não funciona hehe!) ->  se vc viu essa mensagem o desenvolvedor fica muito feliz, ta testando o site mesmo!!");
+    toast.success(t('contact_form.form_success'));
   }
 
   return (
@@ -45,24 +40,24 @@ const ContactForm = () => {
             }}
           >
             <Typography variant="h6" fontWeight={600} gutterBottom color='text.light'>
-              Formulário de Contato
+              {t('contact_form.title')}
             </Typography>
             <Typography variant="body2" sx={{ mb: 3 }} color='text.secondaryLight'>
-                Preencha os campos abaixo para entrar em contato conosco. Responderemos o mais breve possível.
+              {t('contact_form.subtitle')}            
             </Typography>
             <TextInput
-              placeholder="Nome"
+              placeholder={t('contact_form.form_name')}
               value={name}
               setValue={setName}
             />
             <TextInput
-              placeholder="Email"
+              placeholder={t('contact_form.form_email')}
               value={email}
               setValue={setEmail}
               sx={{ mt: 2 }}
             />
             <TextInput
-              placeholder="Mensagem"
+              placeholder={t('contact_form.form_message')}
               multiline
               rows={4}
               value={message}
@@ -74,7 +69,7 @@ const ContactForm = () => {
               sx={{ textTransform: 'none', mt: 3, color: 'text.light', borderColor: 'text.light' }}
               onClick={handleSend}
             >
-              Enviar
+              {t('contact_form.button')}
             </Button>
           </Box>
 
@@ -88,7 +83,7 @@ const ContactForm = () => {
           >
             <Box>
                 <Typography variant="h6" fontWeight={600} gutterBottom color='primary.main' sx={{ mb: 1 }}>
-                    Nossa localização
+                    {t('contact_form.address')}
                 </Typography>
                 <Typography variant="body2" color='text.secondary' sx={{ mb: 3 }}>
                     Rua Benfica, 455 - Madalena, Recife - PE

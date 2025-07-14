@@ -3,23 +3,26 @@ import React from 'react'
 import { Box, Typography, Grid, TextField, Button, IconButton, Avatar } from '@mui/material'
 import { LocationOn, Phone, Email } from '@mui/icons-material'
 import Contact from '../../../assets/Contact.svg'
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
 
+  const { i18n,t } = useTranslation('contact');
+    
   const contactData = [
     {
       icon: <Phone color="primary" />,
       title: '+55 (81) 99999-9999',
-      description: 'Nosso contato'
+      description: ''
     },
     {
       icon: <Email color="primary" />,
       title: 'contato@pesquisa.ai',
-      description: 'e-mail institucional'
+      description: ''
     },
     {
       icon: <LocationOn color="primary" />,
-      title: 'Endereço',
+      title: t('contact_hero.address'),
       description: 'Rua Benfica, 455 - Madalena, Recife - PE'
     }
   ]
@@ -42,20 +45,20 @@ const HeroSection = () => {
                 <Box> 
                     <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 10,textAlign:{xs:'center',md:'left'}, }}>
                         <Typography variant="h4" fontWeight={700} gutterBottom color="text.light">
-                            Contate-nos
+                            {t('contact_hero.title')}
                         </Typography>
                         <Typography variant="body1" color="text.secondaryLight" sx = {{maxWidth: 500, mb: 4}}>
-                            Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre nossos projetos, não hesite em entrar em contato conosco.
+                            {t('contact_hero.subtitle')}                       
                         </Typography>
                     </Box>
                 </Box>
                 <Box>
                     <Box sx = {{width: '100%', maxWidth: 'lg', mx: 'auto', py: 2,textAlign:{xs:'center',md:'left'}, }}>
                         <Typography variant="h5" fontWeight={700} gutterBottom color="primary.main">
-                            Informações de contato
+                            {t('contact_hero.title2')}  
                         </Typography>
                         <Typography variant="body1" color="text.secondary" sx = {{maxWidth: 500, mb: 4}}>
-                            Preencha o formulário abaixo ou entre em contato diretamente através dos nossos canais de comunicação. Estamos ansiosos para ouvir de você!
+                            {t('contact_hero.subtitle2')}  
                         </Typography>
                         <Box sx = {{display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 4, alignItems: 'center', justifyContent: 'start'}}>
                             {contactData.map((item, index) => (

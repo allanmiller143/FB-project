@@ -1,0 +1,22 @@
+{
+  "contact_hero": {
+    "title": "Contate-nos",
+    "subtitle": "Estamos aqui para ajudar! Se você tiver alguma dúvida, sugestão ou precisar de mais informações sobre nossos projetos, não hesite em entrar em contato conosco.",
+    "title2": "Informações de contato",
+    "subtitle2": "Preencha o formulário abaixo ou entre em contato diretamente através dos nossos canais de comunicação. Estamos ansiosos para ouvir de você!",
+    "address":"Endereço"
+  },
+  "contact_form": {
+    "title": "Formulário de Contato",
+    "subtitle": "Preencha os campos abaixo para entrar em contato conosco. Responderemos o mais breve possível.",
+    "button": "Enviar",
+    "form_name": "Nome",
+    "form_email": "Email",
+    "form_message": "Mensagem",
+    "form_error": "Por favor, preencha todas as informações!!!",
+    "form_success": "Mensagem enviada com sucesso!",
+    "address":"Nossa localização",
+    "map":"Ver mapa ampliado"
+ 
+}
+}

@@ -10,8 +10,8 @@ import publicationDetailPT from './pt/publicationDetail.json'
 import publicationDetailEN from './en/publicationDetail.json'
 import publicationsPT from './pt/publications.json'
 import publicationsEN from './en/publications.json'
-
-
+import contactPT from './pt/Contact.json'
+import contactEN from './en/Contact.json'
 
 i18n
   .use(LanguageDetector)
@@ -22,20 +22,22 @@ i18n
         home: homePT,
         header: headerPT,
         publication_detail: publicationDetailPT,
-        publications:publicationsPT
+        publications:publicationsPT,
+        contact:contactPT
         // ...
       },
       en: {
         home: homeEN,
         header: headerEN,
         publication_detail: publicationDetailEN,
-        publications:publicationsEN
+        publications:publicationsEN,
+        contact:contactEN
 
         // ...
       },
     },
     fallbackLng: 'en',
-    ns: ['home', 'header','publication_detail','publications'], // nomes dos arquivos
+    ns: ['home', 'header','publication_detail','publications','contact'], // nomes dos arquivos
     defaultNS: 'home',
     interpolation: {
       escapeValue: false,
