@@ -11,6 +11,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import LogoutIcon from '@mui/icons-material/Logout'
 import Brightness4Icon from '@mui/icons-material/Brightness4'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 const navItems = [
   { label: 'Início', path: '/', icon: <HomeIcon /> },
@@ -25,8 +26,14 @@ const Header = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const [drawerOpen, setDrawerOpen] = useState(false)
-
   const isActive = (path) => location.pathname === path
+  const { i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
+  };
+
 
   return (
     <Box
@@ -66,6 +73,23 @@ const Header = () => {
         >
           Pesquisa | Prof. F. Buarque
         </Typography>
+        {/* <Button
+          onClick={toggleLanguage}
+          sx={{
+            textTransform: 'none',
+            fontWeight: 500,
+            fontSize: '0.9rem',
+            minWidth: 40,
+            px: 1.5,
+            color: 'text.secondary',
+            '&:hover': {
+              color: 'primary.main',
+            },
+            display: { xs: 'none', md: 'inline-flex' }, // apenas no desktop
+          }}
+        >
+          {i18n.language === 'pt' ? 'EN' : 'PT'}
+        </Button> */}
 
         {/* DESKTOP MENU */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>

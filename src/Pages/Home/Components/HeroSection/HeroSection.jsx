@@ -3,12 +3,13 @@ import { Box, Typography, Button, Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import Img from '../../../../assets/download.png'
-
+import { useTranslation } from 'react-i18next';
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
 
 const HeroSection = () => {
   const navigate = useNavigate()
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -44,7 +45,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Grupo de Pesquisa em Inteligência Computacional (CIRG@UPE)
+              {t('home_hero.title')}
             </MotionTypography>
 
             <Typography
@@ -59,7 +60,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.
+              {t('home_hero.subtitle')}           
             </Typography>
 
             <Button
@@ -69,7 +70,8 @@ const HeroSection = () => {
               color="primary"
               onClick={() => navigate('/publicacoes')}
             >
-              Conheça nossas publicações
+              {t('home_hero.button')}           
+
             </Button>
 
             <Typography
@@ -82,7 +84,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco
+              {t('home_hero.caption')}           
             </Typography>
           </MotionBox>
 
