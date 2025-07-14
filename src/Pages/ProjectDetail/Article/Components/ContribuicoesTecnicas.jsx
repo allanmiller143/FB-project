@@ -1,14 +1,16 @@
 import { Box, Typography, Stack } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 
 const ContribuicoesTecnicas = ({projeto}) => {
   if(!projeto.contribuicoes){
     return
   }
+  const { t } = useTranslation('publication_detail');
 
   return (
     <Box>
       <Typography variant="h6" fontWeight={600} gutterBottom>
-        Contribuições Técnicas
+        {t('publication_detail.contribuitions')}
       </Typography>
 
       <Stack spacing={1} component="ul" sx={{ pl: 2, mt: 1 }}>

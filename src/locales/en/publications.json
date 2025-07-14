@@ -1,0 +1,17 @@
+{
+  "publications_hero": {
+    "title": "Publicações",
+    "subtitle": "Explore as publicações feitas pelo nosso grupo. Busque por título, área de atuação ou palavras-chave relacionadas ",
+    "input_text": "Pesquisar por título, área ou palavras-chave...",
+    "filter": "Ordenar por",
+    "filter_order1": "Mais recentes",
+    "filter_order2": "Mais antigos",     
+    "published": "Publicado em: ",
+    "card_button": "Ver detalhes"
+  },
+  "publications_list": {
+    "title": "Publicações",
+    "published": "Publicado em: ",
+    "card_button": "Ver detalhes"
+  }
+}

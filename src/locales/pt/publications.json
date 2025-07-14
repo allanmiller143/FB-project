@@ -1,0 +1,16 @@
+{
+  "publications_hero": {
+    "title": "Publications",
+    "subtitle": "Explore the publications made by our group. Search by title, field of study, or related keywords.",
+    "input_text": "Search by title, field, or keywords...",
+    "filter": "Sort by",
+    "filter_order1": "Most recent",
+    "filter_order2": "Oldest",
+    "card_button": "View details"
+  },
+  "publications_list": {
+    "title": "Publications",
+    "published": "Published on: ",
+    "card_button": "View details"
+  }
+}

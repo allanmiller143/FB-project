@@ -1,18 +1,17 @@
 // src/pages/Projetos/ProjetoDetalhado.jsx
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { projetosData } from '../../Home/Components/Projects/Data'
+import { publicationsDataEN } from '../../../locales/Data/Publications/PublicationsDataEn'
 import {Box,Typography,Chip,Divider,Stack,Button,Link,Paper} from '@mui/material'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import HeroSection from './Components/HeroSection'
 import Abstract from './Components/Abstract'
 import ProjectInformation from './Components/ProjectInformation'
 import PageContainer from '../../../Utils/Components/Containers/PageContainer'
-import InfoBox from '../../../Utils/Components/Utils/InfoBox'
 
 const ProjetoDetalhado = () => {
   const { id } = useParams()
-  const projeto = projetosData.find((p) => p.id === id)
+  const projeto = publicationsDataEN.find((p) => p.id === id)
 
   if (!projeto) {
     return (

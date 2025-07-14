@@ -2,11 +2,13 @@ import React from 'react'
 import {Box,Typography,Card,CardContent,Avatar,Chip,Button,} from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const MotionCard = motion(Card)
 
 const DestaqueCard = ({ projeto }) => {
   const navigate = useNavigate()
+  const { i18n,t } = useTranslation('publications');
 
   if (!projeto) return null
 
@@ -63,7 +65,11 @@ const DestaqueCard = ({ projeto }) => {
         </Typography>
 
         <Typography variant="caption" sx={{ color: 'text.disabled' }}>
-          Publicado em {new Date(projeto.data).toLocaleDateString('pt-BR')}
+          {new Date(projeto.data).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+          })}         
         </Typography>
 
         <Box sx={{ mt: 3, display: 'flex', justifyContent: 'flex-end' }}>
@@ -77,7 +83,7 @@ const DestaqueCard = ({ projeto }) => {
             }}
             onClick={() => navigate(`/publicacoes/${projeto.id}`)}
           >
-            Ver detalhes
+            {t('publications_list.card_button')}
           </Button>
         </Box>
       </CardContent>

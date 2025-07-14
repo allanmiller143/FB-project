@@ -1,0 +1,19 @@
+{
+  "publication_detail": {
+    "published": "Published on: ",
+    "area": "Area: ",
+    "pdf_button": "Access via journal website",
+    "abstract": "Abstract",
+    "info": "General Information",
+    "authors": "Authors",
+    "contribuitions": "Technical Contributions",
+    "key_words": "Keywords",
+    "publications": "Publications"
+  },
+  "publication_dialog": {
+    "title": "External Download",
+    "subtitle": "This article is available in a restricted-access journal. To access the full content, you will be redirected to the journal's website.",
+    "cancel_button": "Cancel",
+    "access_button": "Access article"
+  }
+}

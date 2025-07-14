@@ -9,7 +9,7 @@ const MotionTypography = motion(Typography)
 
 const HeroSection = () => {
   const navigate = useNavigate()
-  const { t } = useTranslation();
+  const { t } = useTranslation('home');
 
   return (
     <Box

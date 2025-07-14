@@ -3,12 +3,14 @@ import { Box, Typography, Divider, Stack, Paper, Button } from '@mui/material'
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import { motion } from 'framer-motion'
 import DownloadDialog from './DownloadDialog' // ajuste o caminho conforme sua pasta
+import { useTranslation } from 'react-i18next';
 
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
 
 const HeroSection = ({ projeto }) => {
   const [dialogOpen, setDialogOpen] = useState(false)
+  const { t } = useTranslation('publication_detail');
 
   return (
     <Box sx={{ maxWidth: 'lg', mx: 'auto', py: 6 }}>
@@ -28,7 +30,7 @@ const HeroSection = ({ projeto }) => {
 
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 4 }}>
           <MotionTypography variant="body2" color="text.secondary" mb={1}>
-            <strong>Publicado em:</strong> {projeto.data}
+            <strong> {t('publication_detail.published')}</strong> {projeto.data}
           </MotionTypography>
 
  
@@ -47,7 +49,7 @@ const HeroSection = ({ projeto }) => {
                 }
               }}
             >
-              Acessar via site da revista
+              {t('publication_detail.pdf_button')}
             </Button>
     
         </Box>
@@ -63,7 +65,7 @@ const HeroSection = ({ projeto }) => {
 
         <Stack direction="row" spacing={4} sx={{ mb: 4 }}>
           <Typography variant="body2" color="text.secondary">
-            <strong>Área:</strong> {projeto.area}
+            <strong> {t('publication_detail.area')}</strong> {projeto.area}
           </Typography>
         </Stack>
 

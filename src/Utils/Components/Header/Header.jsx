@@ -73,7 +73,7 @@ const Header = () => {
         >
           Pesquisa | Prof. F. Buarque
         </Typography>
-        {/* <Button
+        <Button
           onClick={toggleLanguage}
           sx={{
             textTransform: 'none',
@@ -89,7 +89,9 @@ const Header = () => {
           }}
         >
           {i18n.language === 'pt' ? 'EN' : 'PT'}
-        </Button> */}
+        </Button>
+
+        
 
         {/* DESKTOP MENU */}
         <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>

@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
 import {Box,Typography,TextField,InputAdornment,Pagination,MenuItem,Select,FormControl,InputLabel,} from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search'
-import { projetosData } from '../../Pages/Home/Components/Projects/Data'
+import {publicationsDataEN} from '../../locales/Data/Publications/PublicationsDataEn'
 import Projects from './Components/ProjectsList'
 import DestaqueCard from './Components/DestaqueCard'
 import PageContainer from '../../Utils/Components/Containers/PageContainer'
-import InfoBox from '../../Utils/Components/Utils/InfoBox'
+import { useTranslation } from 'react-i18next';
 
 const Projetos = () => {
   const [busca, setBusca] = useState('')
   const [pagina, setPagina] = useState(1)
   const [ordenacao, setOrdenacao] = useState('mais-recentes')
   const projetosPorPagina = 8
-  const projetoEmDestaque = [...projetosData].sort((a, b) => new Date(b.data) - new Date(a.data))[0]
+  const projetoEmDestaque = [...publicationsDataEN].sort((a, b) => new Date(b.data) - new Date(a.data))[0]
+  const { t } = useTranslation('publications');
 
 
   // Filtro por busca
-  const projetosFiltrados = projetosData.filter((p) =>
+  const projetosFiltrados = publicationsDataEN.filter((p) =>
     p.titulo.toLowerCase().includes(busca.toLowerCase()) ||
     p.area.toLowerCase().includes(busca.toLowerCase()) ||
     (p.text && p.text.toLowerCase().includes(busca.toLowerCase()))
@@ -53,7 +54,7 @@ const Projetos = () => {
                   color: 'primary.main',
                   }}
               >
-              Publicações
+              {t('publications_hero.title')}
             </Typography>
 
             {/* Descrição */}
@@ -68,7 +69,7 @@ const Projetos = () => {
                   mb: {xs: 2, md: 4},
                   }}
             >
-              Explore as publicações feitas pelo nosso grupo. Busque por título, área de atuação ou palavras-chave relacionadas.
+             {t('publications_hero.subtitle')}            
             </Typography>
 
             {/* Barra de busca e ordenação */}
@@ -83,7 +84,7 @@ const Projetos = () => {
               }}
             >
               <TextField
-                placeholder="Pesquisar por título, área ou palavras-chave..."
+                placeholder={t('publications_hero.input_text')}
                 size="small"
                 value={busca}
                 onChange={(e) => {
@@ -101,14 +102,14 @@ const Projetos = () => {
               />
 
               <FormControl size="small" sx={{ width: { xs: '100%', sm: 200 } }}>
-                <InputLabel>Ordenar por</InputLabel>
+                <InputLabel>{t('publications_hero.filter')}</InputLabel>
                 <Select
                   value={ordenacao}
                   label="Ordenar por"
                   onChange={(e) => setOrdenacao(e.target.value)}
                 >
-                  <MenuItem value="mais-recentes">Mais recentes</MenuItem>
-                  <MenuItem value="mais-antigos">Mais antigos</MenuItem>
+                  <MenuItem value="mais-recentes">{t('publications_hero.filter_order1')}</MenuItem>
+                  <MenuItem value="mais-antigos">{t('publications_hero.filter_order2')}</MenuItem>
                 </Select>
               </FormControl>
             </Box>

@@ -4,18 +4,21 @@ import { Box, Typography, Chip, Divider, Stack, Paper, Link } from '@mui/materia
 import Authors from './Authors'
 import ContribuicoesTecnicas from './ContribuicoesTecnicas'
 import ChipList from '../../../../Utils/Components/Utils/ChipList'
+import { useTranslation } from 'react-i18next';
 
 const ProjectInformation = ({ projeto }) => {
+  const { t } = useTranslation('publication_detail');
+  
   return (
     <Box  sx={{ maxWidth: 'lg', mx: 'auto', py: 2}}>
     <Box sx={{ display:'flex', justifyContent:'space-between', flexDirection:{xs:'column', md: 'row'}, alignItems:'start', width:'100%', gap:3}}>
       <Stack spacing={2} >
         <Typography variant="h6" fontWeight={600} gutterBottom>
-            Informações Gerais
+            {t('publication_detail.info')}
         </Typography>
         <Box>
           <Typography variant="subtitle1" fontWeight={600}>
-            Autores
+            {t('publication_detail.authors')}
           </Typography>
           <Authors projeto= {projeto}/>          
         </Box>
@@ -28,7 +31,7 @@ const ProjectInformation = ({ projeto }) => {
         <Divider sx={{ my: 2 }} />
         <Box>
             <Typography variant="subtitle1" fontWeight={600} gutterBottom>
-            Publicações 
+            {t('publication_detail.publications')}
             </Typography>
             <Stack spacing={2}>
             {projeto.publicacoes.map((pub, i) => (

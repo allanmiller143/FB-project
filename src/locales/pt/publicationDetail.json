@@ -1,0 +1,20 @@
+{
+  "publication_detail": {
+    "published": "Publicado em: ",
+    "area": "Área: ",
+    "pdf_button": "Acessar via site da revista",
+    "abstract": "Resumo",
+    "info":"Informações Gerais",
+    "authors":"Autores",
+    "contribuitions":"Contribuições Técnicas",
+    "key_words": "Palavras chave",
+    "publications":"Publicações"
+  },
+  "publication_dialog":{
+    "title": "Download externo",
+    "subtitle":"Este artigo está disponível em um periódico com acesso restrito. Para acessar o conteúdo completo, você será redirecionado para o site da revista",
+    "cancel_button": "cancelar",
+    "access_button":"Acessar artigo"
+  }
+
+}

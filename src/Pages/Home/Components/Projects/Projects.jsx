@@ -3,14 +3,15 @@ import React, { useRef } from 'react'
 import { Box, Typography, Card, CardContent, Chip, Avatar, Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
-import { projetosData } from './Data'
-
+import { publicationsDataEN } from '../../../../locales/Data/Publications/PublicationsDataEn'
+import { useTranslation } from 'react-i18next';
 const MotionCard = motion(Card)
 
 const Projects = () => {
   const navigate = useNavigate()
   const containerRef = useRef(null)
   const isInView = useInView(containerRef, { once: true, margin: '-100px' }) // dispara só uma vez
+  const { i18n, t } = useTranslation('home');
 
   return (
     <Box
@@ -27,11 +28,11 @@ const Projects = () => {
         fontWeight={600}
         sx={{ mb: 4, textAlign: 'left', borderBottom: '4px solid #0D3B66', pb: 1, color: 'primary.main' }}
       >
-        Projetos em Destaque
+        {t('home_publications.title')}
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {projetosData.slice(0,5).map((projeto, index) => (
+        {publicationsDataEN.slice(0,5).map((projeto, index) => (
            <MotionCard
             key={projeto.id}
             initial={{ opacity: 0, x: 0 }}
@@ -107,7 +108,7 @@ const Projects = () => {
                         overflow: 'hidden',
                         textOverflow: 'ellipsis',
                         fontSize: { xs: '0.75rem', md: '0.85rem' },
-                        maxWidth: '95%',
+                        maxWidth: '100%',
                         }}
                     >
                         {projeto.descricao}
@@ -154,7 +155,11 @@ const Projects = () => {
                   variant="caption"
                   sx={{ display: 'block', color: 'primary.main' }}
                 >
-                  Publicado em {new Date(projeto.data).toLocaleDateString('pt-BR')}
+                {new Date(projeto.data).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
+                  day: '2-digit',
+                  month: 'long',
+                  year: 'numeric',
+                })}                
                 </Typography>
                 <Button
                   variant="outlined"
@@ -162,7 +167,7 @@ const Projects = () => {
                   sx={{ textTransform: 'none', fontWeight: 600, padding: '2px 12px' }}
                   onClick={() => navigate(`/publicacoes/${projeto.id}`)}
                 >
-                  Ver detalhes
+                  {t('home_publications.card_button')}
                 </Button>
               </Box>
             </CardContent>
@@ -173,9 +178,9 @@ const Projects = () => {
         <Button
           variant="outlined"
           sx={{ textTransform: 'none', fontWeight: 600, padding: '6px 12px' }}
-          onClick={() => window.location.href = '/projetos'}
+          onClick={() => window.location.href = '/publicacoes'}
         >
-          Ver mais projetos
+          {t('home_publications.button')}
         </Button>
       </Box>
     </Box>

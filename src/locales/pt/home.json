@@ -1,0 +1,19 @@
+{
+  "home_hero": {
+    "title": "Grupo de Pesquisa em Inteligência Computacional (CIRG@UPE)",
+    "subtitle": "Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.",
+    "button": "Conheça nossas publicações",
+    "caption": "Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco"
+  },
+  "home_news": {
+    "title": "Últimas noticias",
+    "subtitle": "Pesquisa aplicada com foco em Inteligência Artificial, Sistemas Complexos e soluções com impacto real. Ciência com propósito, colaboração e visão de futuro.",
+    "button": "Ver mais",
+    "caption": "Centro de Inovação em Inteligência Artificial – Universidade de Pernambuco"
+  },
+  "home_publications": {
+    "title": "Últimas publicações",
+    "button": "Ver mais",
+    "card_button": "Detalhes" 
+  }
+}

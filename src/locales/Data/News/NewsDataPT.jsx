@@ -1,18 +1,10 @@
-import AI1 from '../../../../assets/News/IA1.jpg';
-import AI2 from '../../../../assets/News/IA2.jpg';
-import AI3 from '../../../../assets/News/IA3.jpg';
-import AI4 from '../../../../assets/News/IA4.jpg';
-import AI5 from '../../../../assets/News/IA5.jpg';
 
-import New1 from '../../../../assets/News/New1/PrimeiraReuniao.png'
+import New1 from '../../../assets/News/New1/PrimeiraReuniao.png'
+import New2 from '../../../assets/News/New2/RegiaoMilitar.png'
+import New3 from '../../../assets/News/New3/PauloVarjalProject.png'
+import New4 from '../../../assets/News/New4/Comissao.png'
 
-import New2 from '../../../../assets/News/New2/RegiaoMilitar.png'
-
-import New3 from '../../../../assets/News/New3/PauloVarjalProject.png'
-
-import New4 from '../../../../assets/News/New4/Comissao.png'
-
-export const newsData = [
+export const newsDataPT = [
   {
     id: '1',
     title: 'Participação da POLI/UPE na Conferência Ibérica de Sistemas de Informação',

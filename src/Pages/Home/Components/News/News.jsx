@@ -4,7 +4,10 @@ import {Box,Typography,Card,CardMedia,CardContent,Chip,Button,} from '@mui/mater
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import Slider from 'react-slick'
-import { newsData } from './Data'
+import { newsDataPT } from '../../../../locales/Data/News/NewsDataPT'
+import { newsDataEN } from '../../../../locales/Data/News/NewsDataEn'
+
+import { useTranslation } from 'react-i18next';
 
 const sliderSettings = {
   dots: false,
@@ -23,7 +26,11 @@ const sliderSettings = {
   ],
 }
 
-const News = ({label= 'Últimas noticias'}) => {
+const News = () => {
+
+  const { t } = useTranslation('home');
+  const { i18n } = useTranslation()
+  const newsData = i18n.language === 'pt' ? newsDataPT : newsDataEN
   const navigate = useNavigate()
 
   return (
@@ -38,7 +45,7 @@ const News = ({label= 'Últimas noticias'}) => {
           pb: 1,
         }}
       >
-        {label}
+        {t('home_news.title')}
       </Typography>
 
       <Slider {...sliderSettings}>
@@ -112,7 +119,7 @@ const News = ({label= 'Últimas noticias'}) => {
                     mt: 'auto',
                   }}
                 >
-                  {new Date(item.date).toLocaleDateString('pt-BR', {
+                  {new Date(item.date).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
                     day: '2-digit',
                     month: 'long',
                     year: 'numeric',
@@ -129,7 +136,7 @@ const News = ({label= 'Últimas noticias'}) => {
           sx={{ textTransform: 'none', fontWeight: 600, display: 'flex', alignSelf: 'end', padding: '6px 12px' }}
           onClick={() => window.location.href = '/noticias'}
         >
-          Ver mais notícias
+          {t('home_news.button')}
         </Button>
        </Box>
     </Box>

@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 import { Box, Typography, Card, CardContent, Chip, Avatar, Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const MotionCard = motion(Card)
 
@@ -10,6 +11,7 @@ const Projects = ({projetosData}) => {
   const navigate = useNavigate()
   const containerRef = useRef(null)
   const isInView = useInView(containerRef, { once: true, margin: '-100px' }) // dispara só uma vez
+  const { i18n,t } = useTranslation('publications');
 
   return (
     <Box
@@ -25,7 +27,7 @@ const Projects = ({projetosData}) => {
         fontWeight={600}
         sx={{ mb: 4, textAlign: 'left', borderBottom: '4px solid #0D3B66', pb: 1, color: 'primary.main' }}
       >
-        Publicações
+        {t('publications_list.title')}
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
@@ -151,7 +153,11 @@ const Projects = ({projetosData}) => {
                   variant="caption"
                   sx={{ display: 'block', color: 'primary.main' }}
                 >
-                  Publicado em {new Date(projeto.data).toLocaleDateString('pt-BR')}
+                {new Date(projeto.data).toLocaleDateString(i18n.language === 'pt' ? 'pt-BR' : 'en-US', {
+                  day: '2-digit',
+                  month: 'long',
+                  year: 'numeric',
+                })}                  
                 </Typography>
                 <Button
                   variant="outlined"
@@ -159,7 +165,7 @@ const Projects = ({projetosData}) => {
                   sx={{ textTransform: 'none', fontWeight: 600, padding: '2px 12px' }}
                   onClick={() => navigate(`/publicacoes/${projeto.id}`)}
                 >
-                  Ver detalhes
+                  {t('publications_list.card_button')}
                 </Button>
               </Box>
             </CardContent>

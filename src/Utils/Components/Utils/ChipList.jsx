@@ -1,17 +1,19 @@
 // src/components/ChipList.jsx
 import React from 'react'
 import { Box, Typography, Chip } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 
-const ChipList = ({ title, itens = [] }) => {
+const ChipList = ({ itens = [] }) => {
   if (!itens.length) return null
+  const { t } = useTranslation('publication_detail');
 
   return (
     <Box>
-      {title && (
-        <Typography variant="subtitle1" fontWeight={600} gutterBottom>
-          {title}
-        </Typography>
-      )}
+
+      <Typography variant="subtitle1" fontWeight={600} gutterBottom>
+        {t('publication_detail.key_words')}
+      </Typography>
+  
 
       <Box
         sx={{

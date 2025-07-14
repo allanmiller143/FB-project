@@ -8,19 +8,22 @@ import {
   Button,
   Typography
 } from '@mui/material'
+import { useTranslation } from 'react-i18next';
 
 const DownloadDialog = ({ open, onClose, externalLink }) => {
+  const { t } = useTranslation('publication_detail');
+  
   return (
     <Dialog open={open} onClose={onClose} maxWidth="xs" fullWidth>
-      <DialogTitle>Download externo</DialogTitle>
+      <DialogTitle>{t('publication_dialog.title')} </DialogTitle>
       <DialogContent>
         <Typography variant="body2" color="text.secondary">
-          Este artigo está disponível em um periódico com acesso restrito. Para acessar o conteúdo completo, você será redirecionado para o site da revista.
+          {t('publication_dialog.subtitle')}   
         </Typography>
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose} variant="text" color="inherit">
-          Cancelar
+          {t('publication_dialog.cancel_button')} 
         </Button>
         <Button
           href={externalLink}
@@ -30,7 +33,7 @@ const DownloadDialog = ({ open, onClose, externalLink }) => {
           color="primary"
           sx={{padding:'2px 10px'}}
         >
-          Acessar artigo
+          {t('publication_dialog.access_button')} 
         </Button>
       </DialogActions>
     </Dialog>
