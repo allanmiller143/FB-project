@@ -3,12 +3,13 @@ import { Box, Typography, Button, Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import Img from '../../../assets/Projects/HeroSectionImg.svg'
-
+import { useTranslation } from 'react-i18next';
 const MotionBox = motion(Box)
 const MotionTypography = motion(Typography)
 
 const HeroSection = () => {
   const navigate = useNavigate()
+  const { t } = useTranslation('projects');
 
   return (
     <Box
@@ -42,7 +43,7 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-              Projetos com participação de membros do CIRG
+              {t('projects.title')}
             </MotionTypography>
 
             <Typography
@@ -57,7 +58,8 @@ const HeroSection = () => {
                 textAlign:{xs:'center',md:'left'},
               }}
             >
-CIRG – Computational Intelligence Research Group, vinculado à Universidade de Pernambuco e ativo há mais de 20 anos na formação de pesquisadores e desenvolvimento de soluções baseadas em IA.            </Typography>
+              {t('projects.subtitle')}
+            </Typography>
 
 
           </MotionBox>

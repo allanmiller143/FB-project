@@ -12,7 +12,7 @@ import ProfessorCard from '../../Utils/Components/Utils/ProfessorCard'
 
 const Index = () => {
   return (
-    <PageContainer title="Início | Grupo de Pesquisa - Prof. Fernando Buarque" description="Bem-vindo ao site do grupo de pesquisa liderado pelo Prof. Fernando Buarque. Veja nossos projetos, publicações e equipe.">
+    <PageContainer title="CIRG | Research group" description="Bem-vindo ao site do grupo de pesquisa liderado pelo Prof. Fernando Buarque. Veja nossos projetos, publicações e equipe.">
         <HeroSection/>  
         {/* <ProfessorCard/> */}
         <News/>

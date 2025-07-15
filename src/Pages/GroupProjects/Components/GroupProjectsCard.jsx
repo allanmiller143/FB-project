@@ -1,18 +1,10 @@
 import React from 'react';
-import {
-  Box,
-  Typography,
-  Stack,
-  Link as MuiLink,
-  Divider,
-  useTheme,
-  Paper,
-  Chip,
-} from '@mui/material';
+import {Box,Typography,Stack,Link as MuiLink,Divider,useTheme,Paper,Chip,} from '@mui/material';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-
+import { useTranslation } from 'react-i18next';
 const GroupProjectsCard = ({ projeto }) => {
   const theme = useTheme();
+  const { t } = useTranslation('projects');
 
   return (
     <Paper
@@ -57,16 +49,16 @@ const GroupProjectsCard = ({ projeto }) => {
       {projeto.alunos && (
         <Stack direction="row" spacing={1} flexWrap="wrap" sx={{ mb: 2 }}>
           {projeto.alunos.graduacao && (
-            <Chip label={`Graduação: ${projeto.alunos.graduacao}`} size="small" />
+            <Chip label={`${t('projects.graduação')} : ${projeto.alunos.graduacao}`} size="small" />
           )}
           {projeto.alunos.especializacao && (
-            <Chip label={`Especialização: ${projeto.alunos.especializacao}`} size="small" />
+            <Chip label={`${t('projects.especialização')} : ${projeto.alunos.especializacao}`} size="small" />
           )}
           {projeto.alunos.mestrado && (
-            <Chip label={`Mestrado: ${projeto.alunos.mestrado}`} size="small" />
+            <Chip label={`${t('projects.mestrado')} : ${projeto.alunos.mestrado}`} size="small" />
           )}
           {projeto.alunos.doutorado && (
-            <Chip label={`Doutorado: ${projeto.alunos.doutorado}`} size="small" />
+            <Chip label={`${t('projects.doutorado')} : ${projeto.alunos.doutorado}`} size="small" />
           )}
         </Stack>
       )}
@@ -74,7 +66,7 @@ const GroupProjectsCard = ({ projeto }) => {
       {/* Integrantes */}
       <Box sx={{ mb: 2 }}>
         <Typography variant="subtitle2" fontWeight={600}>
-          Integrantes:
+          {t('projects.members')}:
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {projeto.integrantes.join('; ')}
@@ -92,7 +84,7 @@ const GroupProjectsCard = ({ projeto }) => {
             sx={{ display: 'inline-flex', alignItems: 'center', gap: 1 }}
           >
             <FaExternalLinkAlt size={12} />
-            Acessar site do projeto
+            {t('projects.button')}:
           </MuiLink>
         </Box>
       )}

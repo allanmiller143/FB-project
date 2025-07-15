@@ -18,6 +18,8 @@ import newsPT from './pt/news.json'
 import newsEN from './en/news.json'
 import teamPT from './pt/team.json'
 import teamEN from './en/team.json'
+import projectsPT from './pt/projects.json'
+import projectsEN from './en/projects.json'
 
 i18n
   .use(LanguageDetector)
@@ -32,7 +34,8 @@ i18n
         contact:contactPT,
         news_detail:newsDetailPT,
         news: newsPT,
-        team:teamPT
+        team:teamPT,
+        projects: projectsPT
         // ...
       },
       en: {
@@ -43,13 +46,13 @@ i18n
         contact:contactEN,
         news_detail: newsDetailEN,
         news: newsEN,
-        team:teamEN
-
+        team:teamEN,
+        projects: projectsEN
         // ...
       },
     },
     fallbackLng: 'en',
-    ns: ['home', 'header','publication_detail','publications','contact','news_detail', 'news', 'team'], // nomes dos arquivos
+    ns: ['home', 'header','publication_detail','publications','contact','news_detail', 'news', 'team', 'projects'], // nomes dos arquivos
     defaultNS: 'home',
     interpolation: {
       escapeValue: false,

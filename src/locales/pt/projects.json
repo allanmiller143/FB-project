@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "title": "Projetos com participação de membros do CIRG",
+    "subtitle" : "CIRG – Computational Intelligence Research Group, vinculado à Universidade de Pernambuco e ativo há mais de 20 anos na formação de pesquisadores e desenvolvimento de soluções baseadas em IA.",
+    "members": "Members",
+    "graduação": "Graduação",
+    "mestrado": "Mestrado",
+    "doutorado": "Doutorado",
+    "especialização": "Especialização",
+    "button":"Access projects' site"
+
+  }
+}
