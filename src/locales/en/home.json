@@ -13,5 +13,13 @@
     "title": "Latest publications",
     "button": "See more",
     "card_button": "Details" 
+  },
+  
+  "home_team": {
+    "title": "Meet Our Team",
+    "subtitle": "United Researchers, Unlimited Ideas",
+    "text": "Our research team is composed of professors, undergraduate, master's, and Ph.D. students. We work in various fields, focusing on science and innovation with purpose.",
+    "button": "See more"
   }
+
 }

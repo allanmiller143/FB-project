@@ -14,7 +14,7 @@ function App() {
       <Toaster richColors position="top-right" />
       <AllProjectsContextProvider>
         <Header />
-        <InfoBox/>
+        {/* <InfoBox/> */}
         <Routes />
         <Footer/>
       </AllProjectsContextProvider>

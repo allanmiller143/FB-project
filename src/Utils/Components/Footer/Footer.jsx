@@ -6,6 +6,7 @@ import UPE from '../../../assets/Logos/upe-logo.png'
 import PPGEC from '../../../assets/Logos/logo-v3.png'
 import POLI from '../../../assets/Logos/Poliupe.avif'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const MotionBox = motion(Box)
 
@@ -38,6 +39,8 @@ const logos = [
 
 
 const Footer = () => {
+
+  const { t } = useTranslation('footer');
   return (
     <Box
       component="footer"
@@ -54,13 +57,12 @@ const Footer = () => {
           {/* Bloco de Texto */}
           <Grid item xs={12} md={6}>
             <Typography variant="h6" fontWeight={700} sx={{ color: 'primary.main', mb: 1,textAlign:{xs:'center',md:'left'}, }}>
-              Grupo de Pesquisa em Inteligência Computacional (CIRG@UPE)
+              {t('footer.title')}
             </Typography>
             <Typography variant="body2" sx={{ color: '#555', maxWidth: 500,textAlign:{xs:'center',md:'left'}, }}>
-              Pesquisa aplicada em Inteligência Artificial, Ontologias e Aprendizado de Máquina para resolver desafios reais nas áreas da saúde, meio ambiente e engenharia.
+              {t('footer.subtitle')}            
             </Typography>
           </Grid>
-
           {/* Ícones sociais */}
           <Grid item xs={12} md={6}>
             <Stack direction="row" spacing={2} justifyContent={{ xs: 'center', md: 'flex-end' }}>
@@ -113,7 +115,7 @@ const Footer = () => {
               </Grid>
         {/* Rodapé final */}
         <Typography variant="caption" display="block" textAlign="center" sx={{ color: '#777' }}>
-          © {new Date().getFullYear()} Todos os direitos reservados | UPE | Allan Miller
+          {t('footer.rights')}    
         </Typography>
       </Box>
     </Box>

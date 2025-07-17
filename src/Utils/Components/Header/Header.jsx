@@ -13,7 +13,16 @@ import Brightness4Icon from '@mui/icons-material/Brightness4'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 
-const navItems = [
+const navItemsEn = [
+  { label: 'Home', path: '/', icon: <HomeIcon /> },
+  { label: 'Publications', path: '/publicacoes', icon: <WorkspacesIcon /> },
+  { label: 'Projects', path: '/projetos', icon: <LogoutIcon /> },
+  { label: 'Team', path: '/time', icon: <GroupIcon /> },
+  { label: 'News', path: '/noticias', icon: <ArticleIcon /> },
+  { label: 'Contact', path: '/contato', icon: <ContactMailIcon /> }
+]
+
+const navItemsPt = [
   { label: 'Início', path: '/', icon: <HomeIcon /> },
   { label: 'Publicações', path: '/publicacoes', icon: <WorkspacesIcon /> },
   { label: 'Projetos', path: '/projetos', icon: <LogoutIcon /> },
@@ -22,12 +31,15 @@ const navItems = [
   { label: 'Contato', path: '/contato', icon: <ContactMailIcon /> }
 ]
 
+
 const Header = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const [drawerOpen, setDrawerOpen] = useState(false)
   const isActive = (path) => location.pathname === path
-  const { i18n } = useTranslation();
+  const { i18n } = useTranslation()
+  const navItems = i18n.language === 'pt' ? navItemsPt : navItemsEn
+
 
   const toggleLanguage = () => {
     const newLang = i18n.language === 'pt' ? 'en' : 'pt';
@@ -101,7 +113,7 @@ const Header = () => {
           ))}
         </Box>
 
-                <Button
+        <Button
           onClick={toggleLanguage}
           sx={{
             textTransform: 'none',
@@ -184,7 +196,7 @@ const Header = () => {
               ))}
             </List>
           </Box>
-
+          
           {/* RODAPÉ DO MENU (opcional) */}
           <Box sx={{ mt: 3 }}>
             <Typography variant="caption" color="text.secondary">

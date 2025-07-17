@@ -3,6 +3,7 @@ import { Box, Typography, Button } from '@mui/material'
 import Slider from 'react-slick'
 import {members} from '../../../../Pages/Team/Components/Data'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next';
 
 const sliderSettings = {
   dots: false,
@@ -49,6 +50,8 @@ const sliderSettings = {
 }
 
 const Members = () => {
+  const { t } = useTranslation('home');
+  
   return (       
 
     <Box
@@ -129,7 +132,7 @@ const Members = () => {
             mb: 2,
           }}
         >
-          Conheça nossa equipe
+          {t('home_team.title')}
         </Typography>
         <Typography
           variant="h5"
@@ -143,20 +146,18 @@ const Members = () => {
             textAlign:{xs:'center',md:'left'},
           }}
         >
-          Pesquisadores unidos, ideias ilimitadas
+          {t('home_team.subtitle')}
         </Typography>
         <Typography
           sx={{ fontSize: '0.95rem', color: 'text.secondary', mb: 3, textAlign:{xs:'center',md:'left'}}}>
-          Nosso time de pesquisa é formado por professores, alunos de graduação,
-          mestrado e doutorado. Atuamos em diversas áreas com foco em ciência e
-          inovação com propósito.
+          {t('home_team.text')}
         </Typography>
         <Button
           variant="outlined"
           sx={{ textTransform: 'none', fontWeight: 600, display:'flex',margin: {xs: '0 auto',md:'0'}, alignSelf:'center', }}
           onClick={() => window.location.href = '/time'}
         >
-          Saiba mais sobre nossa equipe
+          {t('home_team.button')}
         </Button>
       </Box>
     </Box>

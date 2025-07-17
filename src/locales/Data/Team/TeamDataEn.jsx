@@ -3,13 +3,14 @@ import Teammate2 from '../../../assets/Members/A.png'
 import Teammate3 from '../../../assets/Members/Marcio.png'
 import Teammate4 from '../../../assets/Members/Fernando.jpg'
 import Teammate5 from '../../../assets/Members/Renata.jpg';
-import Teammate6 from '../../../assets/Members/Mateus_Amorim.png';
+import Teammate6 from '../../../assets/Members/mateus.jpg'
 import Teammate7 from '../../../assets/Members/Durval.jpg';
 import Teammate8 from '../../../assets/Members/Rui.jpg'
 import Teammate9 from '../../../assets/Members/Paulo.jpg'
 import Teammate10 from '../../../assets/Members/Hugo.jpg'
 import Teammate11 from '../../../assets/Members/Lucas.jpg'
 import Teammate12 from '../../../assets/Members/Julio.jpg'
+import Teammate14 from '../../../assets/Members/Ricardo.jpg'
 
 export const TeamDataEn = [
   {
@@ -58,7 +59,7 @@ export const TeamDataEn = [
     foreigner: true
   },
   {
-    name: 'Mercio Cabral',
+    name: 'Marcio Cabral',
     role: 'PhD Student',
     description: "PhD student in Computer Engineering, POLI/UPE. Master's in Physics, DF/UFPE. Bachelor's in Law, FDR/UFPE. Bachelor's in Physics, DF/UFPE. Advisor to the Public Accounts Ministry. Administrative Analyst at TCE-PE. Lawyer, OAB/PE. Areas of Interest: Works with AI applied to the analysis of legal decisions.",
     image: Teammate3,
@@ -73,7 +74,7 @@ export const TeamDataEn = [
     foreigner: false
   },
   {
-    name: 'Renata',
+    name: 'Renata Gois',
     role: 'PhD Student / Lawyer',
     description: "PhD student in Computer Engineering, POLI/UPE. Master's in Computer Science, CIn/UFPE. Lawyer, OAB/PE. Bachelor's in Law, FCAP/UPE. Areas of Interest: Responsible AI, Ethical AI, Requirements, Autonomous Decision-Making, Killer Robots.",
     image: Teammate5,
@@ -90,15 +91,15 @@ export const TeamDataEn = [
   {
     name: 'Mateus Amorim',
     role: "Master's Student",
-    description: "",
+    description: "Master's student in Computer Engineering (UPE/Poli). Bachelor's degree in Computer Engineering (UNIVASF). Areas of interest: Artificial intelligence, health and network sciences.",
     image: Teammate6,
     socials: {
       x: '',
       instagram: '',
-      linkedin: '',
-      lattes: '',
-      git:'',
-      site:''
+      linkedin: 'https://www.linkedin.com/in/mateus-amorim-silva/',
+      lattes: 'http://lattes.cnpq.br/9111449241604215',
+      git:'https://github.com/mateusamorim96',
+      site :''
     },
     foreigner: false
   },
@@ -138,9 +139,9 @@ export const TeamDataEn = [
     description: "Master's student in Computer Engineering at POLI/UPE. Bachelor's degree in Computer Engineering from the Private University of Angola (UPRA). Higher Education Professor in the field of Computer Science in Angola. Exchange student from Angola.",
     image: Teammate9,
     socials: {
-      x: '#',
-      instagram: '#',
-      linkedin: '#',
+      x: '',
+      instagram: '',
+      linkedin: '',
       lattes: '',
       git:'',
       site:''
@@ -189,6 +190,36 @@ export const TeamDataEn = [
       lattes: 'http://lattes.cnpq.br/6510303100942176',
       git:'http://github.com/juliotaveira/',
       site:''
+    },
+    foreigner: false
+  },
+  {
+    name: 'Ricardo Alves',
+    role: 'PhD Student',
+    description: 'Ph.D. student in the field of Responsible Artificial Intelligence at the University of Pernambuco (UPE), holds a Master’s degree in Software Engineering from the Federal University of Pernambuco (UFPE), and a Bachelor’s degree in Computer Science from the Catholic University of Pernambuco (UNICAP).',
+    image: Teammate14,
+    socials: {
+      x: '',
+      instagram: '',
+      linkedin: '',
+      lattes: 'http://lattes.cnpq.br/2313796190102888',
+      git: '',
+      site: ''
+    },
+    foreigner: false
+  },
+  {
+    name: 'Paulo Varjal',
+    role: 'PhD Student',
+    description: 'Ph.D. student in Computer Engineering with an emphasis on Artificial Intelligence at the University of Pernambuco (UPE), holds a Master’s degree in the same field from UPE, and a Bachelor’s degree in Business Administration from the Federal University of Pernambuco (UFPE), completed in 2002.',
+    image: '',
+    socials: {
+      x: '',
+      instagram: '',
+      linkedin: '',
+      lattes: 'https://lattes.cnpq.br/8083173711982664',
+      git: '',
+      site: ''
     },
     foreigner: false
   }

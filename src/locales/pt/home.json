@@ -15,5 +15,11 @@
     "title": "Últimas publicações",
     "button": "Ver mais",
     "card_button": "Detalhes" 
+  },
+  "home_team": {
+    "title": "Conheça nossa equipe",
+    "subtitle": "Pesquisadores unidos, ideias ilimitadas",
+    "text": "Nosso time de pesquisa é formado por professores, alunos de graduação, mestrado e doutorado. Atuamos em diversas áreas com foco em ciência e inovação com propósito.",
+    "button": "Ver mais"
   }
 }
