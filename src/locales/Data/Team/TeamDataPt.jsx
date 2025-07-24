@@ -47,13 +47,13 @@ export const TeamDataPt = [
   {
     name: 'Andina',
     role: 'Doutoranda',
-    description: '',
+    description: 'Graduação em Ciencias Fisico Matematicas na Universidad Nacional del Altiplano , licenciada em Matemática. Mestra em Matemática Aplicada e Computacional na Universidade Estadual de Londrina (UEL). Fazendo Doutorado na Universidade de Pernambuco (UPE) em Engenharia da Computação na área de Inteligencia Computacional.',
     image: Teammate2,
     socials: {
       x: '',
       instagram: '',
       linkedin: '',
-      lattes:'',
+      lattes:'http://lattes.cnpq.br/2743716242194958',
       git:'',
       site :''
     },

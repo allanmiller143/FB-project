@@ -46,12 +46,12 @@ export const TeamDataEn = [
   {
     name: 'Andina',
     role: 'PhD Student',
-    description: ".",
+    description: "Graduated in Mathematical Physical Sciences from the National University of Altiplano, with a degree in Mathematics. Master's degree in Applied and Computational Mathematics from the State University of Londrina (UEL). Currently pursuing a PhD in Computer Engineering in Computational Intelligence at the University of Pernambuco (UPE).",
     image: Teammate2,
     socials: {
       x: '',
       instagram: '',
-      linkedin: '',
+      linkedin: 'http://lattes.cnpq.br/2743716242194958/',
       lattes:'',
       git:'',
       site:''
